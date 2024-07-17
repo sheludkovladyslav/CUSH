@@ -1,0 +1,17 @@
+%buttonAnimation {
+  transition: transform 250ms ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+%titlesMobile {
+  font-weight: 800;
+  font-size: 24px;
+  text-align: center;
+  color: $colorTextTitles;
+}
+
+%titlesDesktop {
+  font-size: 48px;
+}
