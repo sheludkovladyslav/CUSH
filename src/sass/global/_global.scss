@@ -20,3 +20,9 @@ img {
   width: 100%;
   max-width: 100%;
 }
+
+.button {
+  background-color: $colorTextActive;
+  border-radius: 15px;
+  color: $colorTextTertiary;
+}
