@@ -68,10 +68,6 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
-.cache
-.parcel-cache/
-.parcel-cache
-
 # dotenv environment variables file
 .env
 .env.test
@@ -106,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+.parcel-cache/
