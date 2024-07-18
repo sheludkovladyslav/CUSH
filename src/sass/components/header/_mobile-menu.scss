@@ -1,0 +1,142 @@
+.nav__btn {
+  display: none;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .btn-menu {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    background-color: transparent;
+  }
+
+  .btn-menu__icon,
+  .btn-menu__icon::before,
+  .btn-menu__icon::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    background-color: #333;
+    transition: transform 0.3s ease-in 0.3s;
+    transition: top 0.1s ease-in;
+    z-index: 1000;
+  }
+
+  .btn-menu__icon {
+    top: calc(50% - 1px);
+  }
+
+  .btn-menu__icon::after {
+    top: 8px;
+  }
+
+  .btn-menu__icon::before {
+    top: -8px;
+  }
+  .nav__list {
+    display: none;
+  }
+
+  .menu-open .btn-menu__icon::before,
+  .menu-open .btn-menu__icon::after {
+    top: 0;
+  }
+
+  .menu-open .btn-menu {
+    padding: 15px;
+  }
+
+  .menu-open .btn-menu__icon {
+    transform: rotate(-45deg);
+  }
+
+  .menu-open .btn-menu__icon::after {
+    transform: rotate(90deg);
+  }
+
+  .nav__list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    padding: 40px 26px;
+
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 113, 91, 0.6) 100%
+    );
+    background-color: white;
+    flex-direction: column;
+    row-gap: 10px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in;
+    justify-content: space-between;
+    z-index: 999;
+  }
+
+  .menu-open .nav__list {
+    transform: translateX(0);
+  }
+
+  .socialmedia {
+    opacity: 0;
+  }
+
+  .menu-open .socialmedia {
+    opacity: 1;
+  }
+}
+
+.menu__list {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.links__link {
+  transition: border-bottom 350ms ease-in-out, border-radius 350ms ease-in-out;
+  &:hover {
+    border-bottom: 2px solid $colorTextActive;
+    border-radius: 2px;
+  }
+}
+
+.nav__link--opened,
+.links__link--opened {
+  color: $colorTextActive;
+}
+
+@media (max-width: 768px) {
+  .contacts__item::before {
+    display: none;
+  }
+
+  .menu {
+    padding-top: 143px;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu__list {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header {
+    display: flex;
+  }
+
+  .menu {
+    justify-content: space-between;
+  }
+}

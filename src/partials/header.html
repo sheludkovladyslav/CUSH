@@ -1,7 +1,13 @@
 <header class="header">
   <div class="header__container container">
     <div class="header__logo header-logo">
-      <img src="#" alt="" class="header-logo__image" />
+      <a href="" class="header-logo__link">
+        <img
+          src="/src/images/header/cush-logo.svg"
+          alt=""
+          class="header-logo__image"
+        />
+      </a>
       <h2 class="header__logo-text"></h2>
     </div>
     <nav class="header__nav nav" data-menu>
@@ -28,26 +34,34 @@
             </li>
           </ul>
         </div>
-        <div class="nav__list-wrapper">
-          <ul class="log-in menu__login">
-            <li class="links__item links__item--login">
-              <a class="links__link links__link--login" href=""
-                >Особистий профіль</a
-              >
-            </li>
-          </ul>
+        <div class="nav-list__wrapper">
+          <div class="log-in menu__login">
+            <a class="log-in__link" href="">Особистий профіль</a>
+          </div>
           <ul class="socialmedia menu__socialmedia">
             <li class="socialmedia__item">
-              <a class="nav__link menu__link" href="">YouTube</a>
+              <a class="nav__link menu__link" href="">
+                <svg class="socialmedia__svg">
+                  <use href="/src/images/icons.svg#icon-youtube"></use></svg
+              ></a>
             </li>
             <li class="socialmedia__item">
-              <a class="nav__link menu__link" href="">Telegram</a>
+              <a class="nav__link menu__link" href="">
+                <svg class="socialmedia__svg">
+                  <use href="/src/images/icons.svg#icon-telegram"></use></svg
+              ></a>
             </li>
             <li class="socialmedia__item">
-              <a class="nav__link menu__link" href="">Instagram</a>
+              <a class="nav__link menu__link" href="">
+                <svg class="socialmedia__svg">
+                  <use href="/src/images/icons.svg#icon-instagram"></use></svg
+              ></a>
             </li>
             <li class="socialmedia__item">
-              <a class="nav__link menu__link" href="">Facebook</a>
+              <a class="nav__link menu__link" href="">
+                <svg class="socialmedia__svg">
+                  <use href="/src/images/icons.svg#icon-facebook"></use></svg
+              ></a>
             </li>
           </ul>
         </div>
