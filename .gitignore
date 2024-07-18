@@ -69,6 +69,7 @@ typings/
 .yarn-integrity
 
 .cache
+.parcel-cache/
 .parcel-cache
 
 # dotenv environment variables file
