@@ -1,13 +1,11 @@
 .teachers {
   &__container {
     padding-inline: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
   }
 
   &__title {
     @extend %titlesMobile;
+    margin-bottom: 20px;
   }
 
   &__cards {
