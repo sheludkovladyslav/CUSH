@@ -1,0 +1,44 @@
+.teachers {
+  &__container {
+    padding-inline: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__title {
+    @extend %titlesMobile;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__card {
+    padding: 16px 16px 36px;
+    border: 0.0111px solid $colorBorders;
+    border-radius: 10px;
+    background-color: $colorBackground;
+  }
+}
+
+.teacher {
+  &__img {
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+
+  &__name {
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  &__job {
+    font-weight: 700;
+    color: $colorTextActive;
+    text-align: center;
+  }
+}
