@@ -1,9 +1,31 @@
 .about-us {
-  background-image: url(/src/images/about-us/about-us-background.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  margin-top: 20px;
   &__container {
-    min-height: 833px;
+    padding-inline: 15px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    background: transparent;
+
+    background-image: url(/src/images/about-us/about-us-background.svg),
+      url(/src/images/about-us/pencil-case.svg),
+      url(/src/images/about-us/book-apple.svg),
+      url(/src/images/about-us/book-ruler.svg),
+      url(/src/images/about-us/backboard.svg);
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position-x: left, right, left, left, right;
+    background-position-y: top, top 10%, top, bottom 25%, bottom;
+  }
+
+  &__title {
+    @extend %titlesMobile;
+    margin-bottom: 20px;
+  }
+
+  &__paragraph {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 2;
+    text-align: center;
   }
 }
