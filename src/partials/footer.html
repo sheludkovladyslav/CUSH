@@ -4,11 +4,13 @@
       <div class="footer__wrapper">
         <div class="footer__logo logo">
           <a href="#" class="logo__link">
-            <svg class="logo__svg">
-              <use>#</use>
-            </svg>
+            <img
+              src="/src/images/header/cush-logo.svg"
+              alt="logo"
+              class="logo__image"
+            />
           </a>
-          <span class="logo__text">ЦУШ</span>
+          <h2 class="logo__text">ЦУШ</h2>
         </div>
         <p class="footer__text logo-text">
           <span class="footer--another-color">Ц</span>ифрова
@@ -17,15 +19,21 @@
         </p>
         <ul class="footer__list-contacts">
           <li class="footer__contacts">
-            <!--svg-->
+            <svg class="footer__svg">
+              <use href="/src/images/icons.svg#icon-number"></use>
+            </svg>
             <a href="#" class="footer__contact">+38 (067) 8 888 888</a>
           </li>
           <li class="footer__contacts">
-            <!--svg-->
+            <svg class="footer__svg">
+              <use href="/src/images/icons.svg#icon-email"></use>
+            </svg>
             <a href="#" class="footer__contact">info@cush.school</a>
           </li>
           <li class="footer__contacts">
-            <!--svg-->
+            <svg class="footer__svg">
+              <use href="/src/images/icons.svg#icon-adress"></use>
+            </svg>
             <a href="#" class="footer__contact">www.yourwebsitename.com</a>
           </li>
         </ul>
@@ -33,34 +41,51 @@
       <ul class="footer__sponsors">
         <li class="footer_sponsor sponsor">
           <a href="#" class="sponsor__link">
-            <svg class="sponsor__svg">
-              <use>#</use>
-            </svg>
+            <div class="sponsor__photo">
+              <img
+                src="/src/images/footer/goiteens.svg"
+                alt="GoIteens"
+                class="sponsor__svg"
+              />
+            </div>
           </a>
         </li>
         <li class="footer_sponsor sponsor">
           <a href="#" class="sponsor__link">
-            <svg class="sponsor__svg">
-              <use>#</use>
-            </svg>
+            <div class="sponsor__photo">
+              <img
+                src="/src/images/footer/google.svg"
+                alt="Google"
+                class="sponsor__svg"
+              />
+            </div>
           </a>
         </li>
         <li class="footer_sponsor sponsor">
           <a href="#" class="sponsor__link">
-            <svg class="sponsor__svg">
-              <use>#</use>
-            </svg>
+            <div class="sponsor__photo">
+              <img
+                src="/src/images/footer/microsoft.svg"
+                alt="microsoft"
+                class="sponsor__svg"
+              />
+            </div>
           </a>
         </li>
         <li class="footer_sponsor sponsor">
           <a href="#" class="sponsor__link">
-            <svg class="sponsor__svg">
-              <use>#</use>
-            </svg>
+            <div class="sponsor__photo">
+              <img
+                src="/src/images/footer/wordpress.svg"
+                alt="wordpress"
+                class="sponsor__svg"
+              />
+            </div>
           </a>
         </li>
       </ul>
     </div>
+    <h3 class="footer__title">Підпишіться на розсилку</h3>
     <form action="#" class="footer__form mailing">
       <input
         type="email"
@@ -73,7 +98,7 @@
     </form>
     <p class="footer__agreement">
       *Натискаючи на цю кнопку ви приймаєте
-      <span class="logo-text--another-color">політику конфіденційності</span> *
+      <span class="footer--another-color">політику конфіденційності</span> *
     </p>
   </div>
 </footer>
