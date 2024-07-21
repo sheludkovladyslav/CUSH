@@ -1,0 +1,9 @@
+.about-us {
+  background-image: url(/src/images/about-us/about-us-background.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  &__container {
+    min-height: 833px;
+  }
+}
