@@ -1,0 +1,36 @@
+.advantages {
+  &__container {
+    padding-inline: 15px;
+  }
+  &__title {
+    font-weight: 800;
+    font-size: 24px;
+    text-align: center;
+    color: $colorTextTitles;
+    margin-bottom: 45px;
+  }
+  &--another-color {
+    color: $colorTextAccent;
+  }
+}
+.advantage {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  &__information {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+  &__text {
+    font-weight: 600;
+  }
+  &--information {
+    padding-top: 33px;
+    border-top: solid 1px $colorTextSecondary;
+  }
+  &__img {
+    width: 50px;
+    height: 50px;
+  }
+}
