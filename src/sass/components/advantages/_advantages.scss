@@ -1,0 +1,53 @@
+.advantages {
+  &__container {
+    padding-inline: 15px;
+  }
+  &__title {
+    font-weight: 800;
+    font-size: 24px;
+    text-align: center;
+    color: $colorTextTitles;
+    margin-bottom: 45px;
+  }
+  &--another-color {
+    color: $colorTextActive;
+  }
+}
+.advantage {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  &__information {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    &::before {
+      content: '';
+      display: flex;
+      background-size: cover;
+      width: 100%;
+      max-width: 50px;
+      background-repeat: no-repeat;
+      height: 50px;
+    }
+  }
+  &__text {
+    font-weight: 600;
+  }
+  &__information--padding {
+    padding-top: 33px;
+    border-top: solid 1px $colorTextSecondary;
+  }
+}
+
+.advantage--user::before {
+  background-image: url(/src/images/advantages/people-box.svg);
+}
+
+.advantage--globe::before {
+  background-image: url(/src/images/advantages/earth-box.svg);
+}
+
+.advantage--headphones::before {
+  background-image: url(/src/images/advantages/heardphones-box.svg);
+}
