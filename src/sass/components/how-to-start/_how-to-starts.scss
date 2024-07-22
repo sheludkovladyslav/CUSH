@@ -1,6 +1,7 @@
 .start {
   &__container {
     padding-inline: 15px;
+    margin-bottom: 60px;
   }
 
   &__title {
@@ -61,5 +62,6 @@
     max-width: 222px;
     color: $colorTextSecondary;
     line-height: 186%;
+    font-family: $fontTextSecondary;
   }
 }

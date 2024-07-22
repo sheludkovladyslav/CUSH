@@ -1,6 +1,7 @@
 .courses {
   &__container {
     padding-inline: 15px;
+    margin-bottom: 60px;
   }
   &__title {
     @extend %titlesMobile;
@@ -21,6 +22,7 @@
   &__text {
     font-size: 24px;
     line-height: 133%;
+    font-family: $fontTextSecondary;
   }
   &__btn {
     font-weight: 500;
