@@ -4,11 +4,8 @@
     margin-bottom: 60px;
   }
   &__title {
-    font-weight: 800;
-    font-size: 24px;
-    text-align: center;
-    color: $colorTextTitles;
-    margin-bottom: 45px;
+    @extend %titlesMobile;
+    margin-bottom: 20px;
   }
   &--another-color {
     color: $colorTextActive;
