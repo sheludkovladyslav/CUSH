@@ -1,22 +1,27 @@
 <section class="popular-courses">
   <div class="popular-courses__container container">
-    <h2 class="popular-courses__title">Найпопулярніші курси</h2>
-    <p class="popular-courses__description">
-      It is a long established fact that a reader will be the distracted by the
-      readable content of a page when looking at its layout from it.
-    </p>
-    <button type="button">Усі курси</button>
-
+    <div class="popular-courses__text">
+      <h2 class="popular-courses__title">
+        Найпопулярніші <span class="popular-courses__title--active">Курси</span>
+      </h2>
+      <p class="popular-courses__description">
+        It is a long established fact that a reader will be the distracted by
+        the readable content of a page when looking at its layout from it.
+      </p>
+      <button type="button" class="button popular-courses__button">
+        Усі курси
+      </button>
+    </div>
     <ul class="popular-courses__cards">
-      <li class="popular-courses__card popular-course">
+      <li class="popular-courses__card popular-course--math">
         <h3 class="popular-course__title">Математика</h3>
       </li>
 
-      <li class="popular-courses__card popular-course">
+      <li class="popular-courses__card popular-course--science">
         <h3 class="popular-course__title">Хімія</h3>
       </li>
 
-      <li class="popular-courses__card popular-course">
+      <li class="popular-courses__card popular-course--english">
         <h3 class="popular-course__title">Англійська мова</h3>
       </li>
     </ul>
