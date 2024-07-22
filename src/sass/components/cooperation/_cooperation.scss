@@ -1,0 +1,31 @@
+.cooperation {
+  background: url(/src/images/cooperation/Group\ 1481.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+  color: $colorTextPrimary;
+  margin-bottom: 60px;
+  &__container {
+    padding-inline: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  &__title {
+    @extend %titlesMobile;
+  }
+  &__btn {
+    @extend %buttonAnimation;
+    font-weight: 500;
+    color: $colorTextTertiary;
+    padding: 16px 25px;
+    border-radius: 5px;
+    background: $colorTextActive;
+    margin-top: 11px;
+  }
+}

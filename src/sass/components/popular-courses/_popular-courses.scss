@@ -1,0 +1,65 @@
+.popular-courses {
+  &__container {
+    padding-inline: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    @extend %titlesMobile;
+    max-width: 160px;
+    line-height: calc(22 / 16);
+    margin-bottom: 5px;
+    &--active {
+      color: $colorTextActive;
+    }
+  }
+
+  &__description {
+    font-size: 10px;
+    color: $colorTextSecondary;
+    font-family: $fontTextSecondary;
+    line-height: calc(12 / 9);
+    margin-bottom: 10px;
+    max-width: 147px;
+  }
+
+  &__card {
+    min-height: 164px;
+    min-width: 121px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__button {
+    padding: 10px 25px;
+    border-radius: 0px;
+    font-size: 12px;
+  }
+}
+
+.popular-course {
+  &--math {
+    background-image: url(/src/images/popular-courses/math.jpg);
+  }
+  &--science {
+    display: none;
+    background-image: url(/src/images/popular-courses/science.jpg);
+  }
+  &--english {
+    display: none;
+    background-image: url(/src/images/popular-courses/english.jpg);
+  }
+
+  &__title {
+    color: $colorTextTertiary;
+  }
+}

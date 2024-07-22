@@ -1,6 +1,7 @@
 .teachers {
   &__container {
     padding-inline: 15px;
+    margin-bottom: 60px;
   }
 
   &__title {
@@ -39,5 +40,6 @@
     color: $colorTextActive;
     text-align: center;
     font-size: 10px;
+    font-family: $fontTextSecondary;
   }
 }
