@@ -1,0 +1,50 @@
+<section class="log-in hidden" data-teacher-menu>
+  <div class="log-in__container container">
+    <div class="login__wrapper" data-teacher-hide>
+      <h2 class="log-in__title log-in__title--experience">
+        станьте нашим вчителем
+      </h2>
+      <form action="#" class="log-in__form login">
+        <div class="login__inputs">
+          <input
+            type="text"
+            placeholder="Ім'я"
+            class="login__input login__input--email"
+            data-login-name
+          />
+          <input
+            type="email"
+            placeholder="Пошта"
+            class="login__input login__input--password"
+            data-login-email
+          />
+          <label for="experience" class="experience__label"
+            >Чи був у вас досвід?</label
+          >
+          <select
+            name="experience"
+            id="experience"
+            class="experience__select experience"
+          >
+            <option value="yes" class="experience__option">Так</option>
+            <option value="no" class="experience__option" selected>Ні</option>
+          </select>
+        </div>
+        <button
+          type="button"
+          class="login__button login__button--experience button"
+          data-teacher-button
+        >
+          Надіслати заявку
+        </button>
+      </form>
+    </div>
+
+    <div class="teacher__success success hidden" data-success>
+      <p class="success__message">
+        Ваша заявка була прийнята, очікуйте відповіді
+      </p>
+    </div>
+    <p class="form__close" data-teacher-close>X</p>
+  </div>
+</section>
