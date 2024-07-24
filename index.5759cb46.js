@@ -1,2 +1,0 @@
-(()=>{const e=document.querySelector("[data-login-open]"),o=document.querySelector("[data-login-close]"),t=document.querySelector("[data-login-menu]");e.addEventListener("click",(()=>{t.classList.remove("hidden"),document.body.classList.toggle("no-scroll")})),o.addEventListener("click",(()=>{t.classList.toggle("hidden"),document.body.classList.remove("no-scroll")}))})();
-//# sourceMappingURL=index.5759cb46.js.map
