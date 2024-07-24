@@ -29,6 +29,7 @@ img {
 
 .hidden {
   display: none;
+  transition: display 1s ease-in;
 }
 .no-scroll {
   overflow: hidden;
