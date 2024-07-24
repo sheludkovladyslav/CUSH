@@ -23,5 +23,3 @@
     openBtn.innerHTML = inputName;
   });
 })();
-
-() => {};
