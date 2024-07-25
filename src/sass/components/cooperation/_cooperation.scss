@@ -4,7 +4,6 @@
   background-size: cover;
   background-position: top;
   font-weight: 600;
-  font-size: 14px;
   line-height: 143%;
   text-align: center;
   color: $colorTextPrimary;
@@ -27,5 +26,70 @@
     border-radius: 5px;
     background: $colorTextActive;
     margin-top: 11px;
+  }
+}
+@media (min-width: 576px) {
+  .cooperation {
+    font-size: 18px;
+    line-height: auto;
+    &__container {
+      padding-inline: 35px;
+      gap: 35px;
+    }
+    &__title {
+      @extend %titles576px;
+    }
+    &__btn {
+      padding: 11px 20px;
+      margin-top: 0;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .cooperation {
+    font-size: 16px;
+    &__container {
+      padding-inline: 44px;
+      align-items: flex-start;
+      gap: 25px;
+    }
+    &__title {
+      font-size: 32px;
+    }
+    &__btn {
+      font-size: 14px;
+    }
+  }
+}
+@media (min-width: 1240px) {
+  .cooperation {
+    font-size: 20px;
+    &__container {
+      padding-inline: 70px;
+      gap: 35px;
+    }
+    &__title {
+      @extend %titles768px;
+    }
+    &__btn {
+      font-size: 16px;
+      padding: 15px 17px;
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .cooperation {
+    font-size: 24px;
+    &__container {
+      padding-inline: 120px;
+      gap: 50px;
+    }
+    &__title {
+      @extend %titlesDesktop;
+    }
+    &__btn {
+      font-size: 18px;
+      padding: 20px 25px;
+    }
   }
 }
