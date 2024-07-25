@@ -1,7 +1,6 @@
 .courses {
   &__container {
     padding-inline: 15px;
-    margin-bottom: 60px;
   }
   &__title {
     @extend %titlesMobile;
@@ -64,4 +63,147 @@
 }
 .visible {
   position: relative;
+}
+@media (min-width: 576px) {
+  .courses {
+    &__container {
+      padding-inline: 35px;
+    }
+    &__title {
+      @extend %titles576px;
+      margin-bottom: 50px;
+    }
+    &__cards {
+      gap: 45px;
+    }
+  }
+  .cours {
+    max-width: 506px;
+    &__text {
+      font-size: 42px;
+      line-height: auto;
+    }
+    &__btn {
+      font-size: 24px;
+      padding: 20px 22px;
+    }
+    &__photo {
+      max-width: 506px;
+    }
+    &__title {
+      font-weight: 700;
+      font-size: 36px;
+      bottom: 25px;
+      left: 30px;
+    }
+    &__overlay {
+      gap: 98px;
+      padding: 45px 30px 35px 30px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .courses {
+    &__container {
+      padding-inline: 44px;
+    }
+    &__title {
+      @extend %titles768px;
+      margin-bottom: 35px;
+    }
+    &__cards {
+      gap: 55px;
+    }
+  }
+  .cours {
+    max-width: 315px;
+    &__text {
+      font-size: 26px;
+    }
+    &__btn {
+      font-size: 16px;
+      padding: 14px 15px;
+    }
+    &__photo {
+      max-width: 315px;
+    }
+    &__title {
+      font-weight: 700;
+      font-size: 24px;
+      bottom: 30px;
+      left: 20px;
+    }
+    &__overlay {
+      gap: 45px;
+      padding: 30px 22px 22px 22px;
+    }
+  }
+}
+@media (min-width: 1240px) {
+  .courses {
+    &__container {
+      padding-inline: 70px;
+    }
+    &__cards {
+      gap: 55px;
+    }
+  }
+  .cours {
+    max-width: 235px;
+    &__text {
+      font-size: 20px;
+    }
+    &__btn {
+      font-size: 16px;
+      padding: 12px 15px;
+    }
+    &__photo {
+      max-width: 235px;
+    }
+    &__title {
+      font-size: 20px;
+      bottom: 14px;
+      left: 14px;
+    }
+    &__overlay {
+      gap: 23px;
+      padding: 15px;
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .courses {
+    &__container {
+      padding-inline: 120px;
+    }
+    &__title {
+      @extend %titlesDesktop;
+      margin-bottom: 55px;
+    }
+    &__cards {
+      gap: 70px;
+    }
+  }
+  .cours {
+    max-width: 326px;
+    &__text {
+      font-size: 24px;
+    }
+    &__btn {
+      font-size: 18px;
+      padding: 20px 44px;
+    }
+    &__photo {
+      max-width: 326px;
+    }
+    &__title {
+      font-size: 28px;
+      bottom: 25px;
+      left: 27px;
+    }
+    &__overlay {
+      gap: 78px;
+      padding: 47px 20px 22px 20px;
+    }
+  }
 }
