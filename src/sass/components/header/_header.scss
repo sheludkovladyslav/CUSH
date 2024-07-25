@@ -71,3 +71,27 @@
     height: 32px;
   }
 }
+
+@media (min-width: 566px) {
+  .header {
+    &__container {
+      padding: 25px;
+    }
+  }
+
+  .menu {
+    padding-top: 183px;
+  }
+
+  .nav__list {
+    padding-inline: 35px;
+  }
+
+  .links__link {
+    font-size: 40px;
+  }
+
+  .log-in__link {
+    font-size: 16px;
+  }
+}
