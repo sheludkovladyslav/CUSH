@@ -20,7 +20,11 @@
   &__map {
     max-width: 290px;
     border-radius: 10px;
-    margin-bottom: 25px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
   }
 }
 .contacs {
@@ -76,5 +80,195 @@
   &__svg {
     max-width: 16px;
     max-height: 16px;
+  }
+}
+@media (min-width: 576px) {
+  .contact {
+    &__container {
+      padding-inline: 35px;
+    }
+    &__title {
+      @extend %titles576px;
+      margin-bottom: 18px;
+    }
+    &__second-title {
+      margin-bottom: 32px;
+      font-size: 32px;
+    }
+    &__map {
+      max-width: 506px;
+    }
+    &__wrapper {
+      gap: 35px;
+    }
+  }
+}
+.contacs {
+  max-width: 506px;
+  padding: 25px 28px 96px 30px;
+  &__card {
+    gap: 15px;
+  }
+  &__category {
+    gap: 5px;
+  }
+  &__title {
+    font-size: 28px;
+  }
+  &__information {
+    font-size: 18px;
+  }
+}
+.contact-icons {
+  gap: 25px;
+  max-width: 214px;
+  padding: 11px 12px;
+}
+.contact-icon {
+  &__svg {
+    max-width: 28px;
+    max-height: 28px;
+  }
+}
+@media (min-width: 768px) {
+  .contact {
+    &__container {
+      padding-inline: 44px;
+    }
+    &__title {
+      @extend %titles768px;
+    }
+    &__second-title {
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
+    &__map {
+      max-width: 680px;
+    }
+    &__wrapper {
+      gap: 50px;
+    }
+  }
+}
+.contacs {
+  max-width: 680px;
+  padding: 34px 57px 130px 34px;
+  &__card {
+    gap: 20px;
+  }
+  &__category {
+    gap: 7px;
+  }
+  &__title {
+    font-size: 32px;
+  }
+  &__information {
+    font-size: 24px;
+  }
+}
+.contact-icons {
+  gap: 35px;
+  max-width: 288px;
+  padding: 15px 16px;
+}
+.contact-icon {
+  &__svg {
+    max-width: 37px;
+    max-height: 37px;
+  }
+}
+@media (min-width: 1240px) {
+  .contact {
+    &__container {
+      padding-inline: 70px;
+    }
+    &__title {
+      @extend %titles768px;
+    }
+    &__second-title {
+      margin-bottom: 106px;
+      font-size: 32px;
+    }
+    &__map {
+      max-width: 493px;
+    }
+    &__wrapper {
+      flex-direction: row;
+      gap: 85px;
+    }
+  }
+}
+.contacs {
+  max-width: 493px;
+  padding: 23px 27px 111px 22px;
+  &__card {
+    gap: 14px;
+  }
+  &__category {
+    gap: 6px;
+  }
+  &__title {
+    font-size: 24px;
+  }
+  &__information {
+    font-size: 18px;
+  }
+}
+.contact-icons {
+  gap: 25px;
+  max-width: 224px;
+  padding: 8px 16px;
+}
+.contact-icon {
+  &__svg {
+    max-width: 28px;
+    max-height: 28px;
+  }
+}
+@media (min-width: 1920px) {
+  .contact {
+    &__container {
+      padding-inline: 120px;
+    }
+    &__title {
+      @extend %titlesDesktop;
+    }
+    &__second-title {
+      margin-bottom: 54px;
+      font-size: 36px;
+    }
+    &__map {
+      max-width: 682px;
+    }
+    &__wrapper {
+      gap: 128px;
+    }
+  }
+}
+.contacs {
+  max-width: 682px;
+  padding: 27px 21px 118px 30px;
+  &__card {
+    gap: 30px;
+  }
+  &__category {
+    gap: 0px;
+  }
+  &__title {
+    font-size: 32px;
+  }
+  &__information {
+    font-size: 24px;
+  }
+}
+.contact-icons {
+  gap: 30px;
+  max-width: 256px;
+  padding: 8px 20px;
+}
+.contact-icon {
+  &__svg {
+    max-width: 32px;
+    max-height: 32px;
   }
 }
