@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .btn-menu {
     display: block;
     width: 30px;
@@ -97,12 +97,6 @@
   }
 }
 
-.menu__list {
-  display: flex;
-
-  flex-direction: column;
-}
-
 .links__link {
   transition: border-bottom 350ms ease-in-out, border-radius 350ms ease-in-out;
   &:hover {
@@ -116,17 +110,42 @@
   color: $colorTextActive;
 }
 
-@media (max-width: 768px) {
-  .contacts__item::before {
-    display: none;
+@media (min-width: 768px) {
+  .nav__list {
+    width: 50%;
   }
 
-  .menu {
-    padding-top: 143px;
+  .menu-open::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.352); /* Колір для неактивної частини */
+    z-index: 998;
+    animation: showBackground 0.2s ease-in;
+    animation-fill-mode: both;
   }
 }
 
-@media (min-width: 769px) {
+@keyframes showBackground {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contacts__item::before {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) {
   .menu__list {
     flex-direction: row;
     align-items: center;

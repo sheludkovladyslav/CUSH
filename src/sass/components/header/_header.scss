@@ -34,11 +34,15 @@
 
 .menu {
   &__list {
+    display: flex;
+    flex-direction: column;
     gap: 23px;
   }
 
   &__login {
     align-self: center;
+    gap: 10px;
+    display: flex;
   }
 
   &__socialmedia {
@@ -53,15 +57,9 @@
     align-items: center;
     gap: 10px;
     display: flex;
-    &:before {
-      content: '';
-      display: block;
-      width: 20px;
-      height: 20px;
-      background-image: url(/src/images/header/user.svg);
-      background-position: center;
-      background-repeat: no-repeat;
-    }
+  }
+  &__svg {
+    fill: $colorTextTertiary;
   }
 }
 
@@ -79,12 +77,20 @@
     }
   }
 
-  .menu {
-    padding-top: 183px;
+  .links__link {
+    font-size: 40px;
   }
 
-  .nav__list {
-    padding-inline: 35px;
+  .log-in__link {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    &__container {
+      padding: 35px;
+    }
   }
 
   .links__link {
@@ -93,5 +99,72 @@
 
   .log-in__link {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu {
+    padding-top: 138px;
+  }
+}
+
+@media (min-width: 566px) and(max-width: 1024px) {
+  .nav__list {
+    padding-inline: 35px;
+  }
+  .menu {
+    padding-top: 183px;
+  }
+}
+
+@media (min-width: 768px) and(max-width: 1024px) {
+}
+
+@media (min-width: 1024px) {
+  .socialmedia {
+    display: none;
+  }
+
+  .links__link {
+    font-size: 14px;
+  }
+
+  .header {
+    &__container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+      padding-inline: 30px;
+    }
+
+    &__nav {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
+
+  .nav__wrapper {
+    display: flex;
+    align-content: center;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  .log-in__link {
+    color: $colorTextPrimary;
+  }
+
+  .menu__list {
+    flex-direction: row;
+  }
+
+  .log-in__svg {
+    fill: $colorTextPrimary;
   }
 }
