@@ -3,15 +3,18 @@
   const closeBtn = document.querySelector('[data-login-close]');
   const menu = document.querySelector('[data-login-menu]');
   const loginButton = document.querySelector('[data-login-button]');
+  const backdrop = document.querySelector('[data-backdrop]');
 
   openBtn.addEventListener('click', () => {
     menu.classList.remove('hidden');
     document.body.classList.toggle('no-scroll');
+    backdrop.classList.toggle('backdrop');
   });
 
   closeBtn.addEventListener('click', () => {
     menu.classList.toggle('hidden');
     document.body.classList.remove('no-scroll');
+    backdrop.classList.remove('backdrop');
   });
 
   loginButton.addEventListener('click', () => {

@@ -56,6 +56,7 @@
     color: $colorTextTertiary;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
     display: flex;
   }
   &__svg {
@@ -140,20 +141,20 @@
 
     &__nav {
       display: flex;
-      width: 100%;
-      justify-content: flex-end;
+      flex-grow: 1;
     }
   }
 
   .nav__wrapper {
     display: flex;
     align-content: center;
+    flex-grow: 1;
+    justify-content: center;
   }
 
   .nav__list {
     display: flex;
-    justify-content: space-between;
-    width: 80%;
+    flex-grow: 1;
   }
 
   .log-in__link {
@@ -162,9 +163,14 @@
 
   .menu__list {
     flex-direction: row;
+    gap: 40px;
   }
 
   .log-in__svg {
     fill: $colorTextPrimary;
+  }
+
+  .log-in__container {
+    border-radius: 5px;
   }
 }
