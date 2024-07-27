@@ -55,14 +55,6 @@
     align-items: flex-start;
     gap: 15px;
   }
-  &__title {
-    color: $colorTextTitles;
-    font-weight: 700;
-    font-size: 12px;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 17px;
-  }
   &__agreement {
     font-weight: 500;
     font-size: 10px;
@@ -94,6 +86,13 @@
   flex-direction: column;
   align-items: center;
   gap: 14px;
+  &__title {
+    color: $colorTextTitles;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+  }
   &__input {
     padding: 14px 60px 14px 16px;
     border: 1px solid $colorBorders;
@@ -150,10 +149,6 @@
     &__sponsors {
       gap: 35px;
     }
-    &__title {
-      font-size: 24px;
-      margin-bottom: 7px;
-    }
     &__agreement {
       font-size: 12px;
     }
@@ -177,6 +172,9 @@
   .mailing {
     align-items: flex-start;
     gap: 12px;
+    &__title {
+      font-size: 24px;
+    }
     &__input {
       padding: 18px 200px 18px 25px;
     }
@@ -231,6 +229,75 @@
     &__btn {
       padding: 40px 20px;
       font-size: 18px;
+    }
+  }
+}
+@media (min-width: 1240px) {
+  .footer {
+    &__container {
+      padding: 70px 35px;
+    }
+    &__information {
+      margin-bottom: 0px;
+    }
+    &__text {
+      font-size: 20px;
+      line-height: 130%;
+      margin-bottom: 20px;
+    }
+    &__list-contacts {
+      gap: 16px;
+      font-size: 16px;
+    }
+    &__contacts {
+      gap: 15px;
+      &::before {
+        content: '';
+        width: 23px;
+        height: 23px;
+      }
+    }
+    &__svg {
+      max-height: 23px;
+      max-width: 23px;
+    }
+    &__logo {
+      margin-bottom: 20px;
+    }
+    &__form {
+      margin-bottom: 0px;
+    }
+  }
+  .mailing {
+    align-items: flex-start;
+    gap: 8px;
+    &__input {
+      padding: 14px 224px 14px 25px;
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .footer {
+    &__container {
+      padding: 120px 35px;
+    }
+    &__text {
+      margin-bottom: 30px;
+    }
+    &__list-contacts {
+      font-size: 18px;
+    }
+    &__contacts {
+      gap: 15px;
+    }
+    &__logo {
+      margin-bottom: 22px;
+    }
+  }
+  .mailing {
+    gap: 8px;
+    &__input {
+      padding: 18px 224px 18px 25px;
     }
   }
 }
