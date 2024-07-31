@@ -104,3 +104,35 @@
       brightness(98%) contrast(80%);
   }
 }
+
+@media (min-width: 566px) {
+  .hero {
+    &__title {
+      font-size: 32px;
+      max-width: 380px;
+    }
+
+    &__container {
+      justify-content: flex-start;
+      padding-top: 100px;
+    }
+
+    &__button {
+      font-size: 16px;
+      padding: 20px;
+    }
+
+    &__invitation {
+      gap: 15px;
+    }
+
+    &__selection {
+      padding: 25px 25px 5px;
+      min-width: 330px;
+    }
+  }
+
+  .form__button {
+    padding: 10px 20px;
+  }
+}
