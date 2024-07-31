@@ -136,3 +136,131 @@
     padding: 10px 20px;
   }
 }
+
+@media (min-width: 1024px) {
+  .hero {
+    &__container {
+      padding-top: 0;
+      min-height: 654px;
+      max-width: 1100px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__form {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__invitation {
+      gap: 25px;
+      align-items: flex-start;
+      padding-left: 90px;
+      position: relative;
+      bottom: 50px;
+    }
+
+    &__button {
+      padding: 25px 20px;
+      font-size: 18px;
+    }
+
+    &__selection {
+      padding: 45px 30px;
+      min-width: 630px;
+      border-radius: 0;
+    }
+  }
+
+  .form {
+    &-input {
+      width: 175px;
+      max-width: 175px;
+      font-size: 16px;
+    }
+
+    &-label {
+      font-size: 16px;
+    }
+    &__button {
+      padding: 15px 25px;
+      border-radius: 0;
+    }
+  }
+
+  .hero__title {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 135%;
+    max-width: 630px;
+    text-align: left;
+    text-shadow: none;
+
+    &--capitalize {
+      text-transform: capitalize;
+    }
+
+    &--lowerize {
+      text-transform: lowercase;
+    }
+  }
+  .choose-course,
+  .date {
+    gap: 10px;
+  }
+
+  .find-course__wrapper {
+    gap: 42px;
+  }
+}
+@media (min-width: 1920px) {
+  .hero {
+    &__container {
+      min-height: 1008px;
+      max-width: 1680px;
+    }
+
+    &__invitation {
+      gap: 50px;
+      bottom: 100px;
+    }
+
+    &__button {
+      padding: 35px 30px;
+      font-size: 24px;
+    }
+
+    &__selection {
+      padding: 45px;
+      min-width: 874px;
+      bottom: -70px;
+    }
+  }
+
+  .form {
+    &-input {
+      width: 240px;
+      max-width: 240px;
+      font-size: 18px;
+    }
+
+    &-label {
+      font-size: 18px;
+    }
+    &__button {
+      padding: 20px 42px;
+      font-size: 18px;
+    }
+  }
+
+  .hero__title {
+    font-size: 96px;
+    line-height: 120%;
+    max-width: 1080px;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.6);
+  }
+
+  .find-course__wrapper {
+    gap: 60px;
+  }
+}
