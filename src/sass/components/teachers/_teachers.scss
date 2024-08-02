@@ -43,3 +43,138 @@
     font-family: $fontTextSecondary;
   }
 }
+
+@media (min-width: 567px) {
+  .teachers {
+    &__container {
+      padding-inline: 25px;
+    }
+
+    &__title {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .teacher {
+    &__name {
+      font-size: 16px;
+    }
+    &__job {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .teachers {
+    &__container {
+      padding-inline: 30px;
+    }
+
+    &__title {
+      font-size: 36px;
+      margin-bottom: 35px;
+    }
+
+    &__cards {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    &__card {
+      flex-basis: calc((100% - 40px) / 2);
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .teachers {
+    &__container {
+      padding-inline: 60px;
+    }
+
+    &__title {
+      font-size: 36px;
+      margin-bottom: 35px;
+    }
+
+    &__cards {
+      column-gap: 60px;
+      row-gap: 40px;
+    }
+
+    &__card {
+      flex-basis: calc((100% - 60px) / 2);
+    }
+  }
+
+  .teacher {
+    &__name {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    &__job {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: 1240px) {
+  .teachers {
+    &__container {
+      padding-inline: 80px;
+    }
+
+    &__title {
+      font-size: 42px;
+      margin-bottom: 40px;
+    }
+
+    &__cards {
+      gap: 20px;
+    }
+
+    &__card {
+      flex-basis: calc((100% - 60px) / 4);
+    }
+  }
+
+  .teacher {
+    &__name {
+      font-size: 16px;
+    }
+    &__job {
+      font-size: 14px;
+      line-height: 1.45;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .teachers {
+    &__container {
+      padding: 0;
+      max-width: 1537px;
+    }
+
+    &__title {
+      font-size: 48px;
+      margin-bottom: 55px;
+    }
+
+    &__cards {
+      gap: 0;
+      justify-content: space-between;
+    }
+  }
+
+  .teacher {
+    &__name {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+  }
+}
