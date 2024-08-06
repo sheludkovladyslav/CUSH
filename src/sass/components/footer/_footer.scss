@@ -236,9 +236,12 @@
   .footer {
     &__container {
       padding: 70px 35px;
+      display: flex;
+      justify-content: space-between;
     }
     &__information {
       margin-bottom: 0px;
+      flex-grow: 1;
     }
     &__text {
       font-size: 20px;
@@ -248,6 +251,9 @@
     &__list-contacts {
       gap: 16px;
       font-size: 16px;
+    }
+    &__wrapper {
+      flex-grow: 1;
     }
     &__contacts {
       gap: 15px;
@@ -266,6 +272,11 @@
     }
     &__form {
       margin-bottom: 0px;
+    }
+
+    &__sponsors {
+      flex-grow: 1;
+      justify-content: center;
     }
   }
   .mailing {
