@@ -97,6 +97,7 @@
   font-size: 24px;
   top: 15px;
   right: 15px;
+  cursor: pointer;
 }
 
 // teachers
@@ -123,6 +124,59 @@
     @extend %titlesMobile;
     text-transform: uppercase;
     line-height: 150%;
+  }
+}
+
+@media (min-width: 567px) {
+  .log-in {
+    &__container {
+      padding-inline: 25px;
+    }
+    &__title {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .login {
+    &__input {
+      width: 410px;
+      font-size: 16px;
+    }
+
+    &__inputs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .log-in {
+    &__container {
+      padding-inline: 35px;
+    }
+    &__title {
+      font-size: 36px;
+      margin-bottom: 35px;
+    }
+  }
+
+  .login {
+    &__input {
+      width: 540px;
+      font-size: 18px;
+    }
+
+    &__inputs {
+      margin-bottom: 20px;
+    }
+
+    &__button {
+      padding: 18px 65px;
+      font-size: 20px;
+    }
   }
 }
 
