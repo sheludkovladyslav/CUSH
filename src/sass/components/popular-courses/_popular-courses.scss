@@ -24,7 +24,7 @@
     color: $colorTextSecondary;
     font-family: $fontTextSecondary;
     line-height: calc(12 / 9);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     max-width: 147px;
   }
 
@@ -45,8 +45,8 @@
     min-width: 121px;
     max-width: 326px;
     max-height: 400px;
-    padding-bottom: 10px;
     padding-inline: 10px;
+    padding-bottom: 10px;
     height: 100%;
   }
 
@@ -74,7 +74,7 @@
     color: $colorTextTertiary;
   }
 }
-@media (min-width: 566px) {
+@media (min-width: 567px) {
   .popular-courses {
     &__container {
       padding-inline: 25px;
@@ -136,7 +136,6 @@
   .popular-courses {
     &__container {
       padding-inline: 80px;
-      align-items: flex-start;
       gap: 0;
     }
     &__card {
@@ -192,7 +191,6 @@
     }
 
     &__cards {
-      gap: 30px;
       justify-content: flex-end;
     }
 
