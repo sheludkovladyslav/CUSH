@@ -2,6 +2,7 @@
   &__container {
     padding: 21px 15px 40px;
     border-top: 0.5px solid $colorBorders;
+    position: relative;
   }
   &__information {
     display: flex;
@@ -64,6 +65,13 @@
   &__form {
     margin-bottom: 14px;
   }
+  &__copyright {
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    color: $colorTextSecondary;
+    bottom: 0;
+  }
 }
 .logo {
   display: flex;
@@ -77,8 +85,10 @@
   }
 }
 .sponsor {
-  &__svg {
-    max-height: 15px;
+  &__photo {
+    height: 15px;
+    width: 72px;
+    object-fit: contain;
   }
 }
 .mailing {
@@ -94,7 +104,8 @@
     text-align: center;
   }
   &__input {
-    padding: 14px 60px 14px 16px;
+    padding: 14px 16px;
+    min-width: 185px;
     border: 1px solid $colorBorders;
   }
   &__btn {
@@ -155,6 +166,9 @@
     &__form {
       margin-bottom: 7px;
     }
+    &__copyright {
+      font-size: 12px;
+    }
   }
   .logo {
     &__image {
@@ -165,8 +179,9 @@
     }
   }
   .sponsor {
-    &__svg {
-      max-height: 33px;
+    &__photo {
+      height: 31px;
+      width: 146px;
     }
   }
   .mailing {
@@ -176,10 +191,11 @@
       font-size: 24px;
     }
     &__input {
-      padding: 18px 200px 18px 25px;
+      padding: 18px 25px;
+      min-width: 462px;
     }
     &__btn {
-      padding: 40px 20px;
+      padding: 20px 40px;
       font-size: 18px;
     }
   }
@@ -187,7 +203,7 @@
 @media (min-width: 768px) {
   .footer {
     &__container {
-      padding: 20px 44px;
+      padding: 20px 35px;
     }
     &__information {
       margin-bottom: 40px;
@@ -209,12 +225,18 @@
         height: 22px;
       }
     }
+    &__agreement {
+      text-align: left;
+    }
     &__svg {
       max-height: 26px;
       max-width: 22px;
     }
     &__logo {
       margin-bottom: 20px;
+    }
+    &__copyright {
+      font-size: 14px;
     }
   }
   .logo {
@@ -223,11 +245,8 @@
     }
   }
   .mailing {
-    &__input {
-      padding: 18px 200px 18px 25px;
-    }
     &__btn {
-      padding: 40px 20px;
+      padding: 20px 40px;
       font-size: 18px;
     }
   }
@@ -278,12 +297,16 @@
       flex-grow: 1;
       justify-content: center;
     }
+    &__copyright {
+      font-size: 18px;
+    }
   }
   .mailing {
     align-items: flex-start;
     gap: 8px;
     &__input {
-      padding: 14px 224px 14px 25px;
+      padding: 14px 20px;
+      min-width: 400px;
     }
   }
 }
@@ -308,7 +331,8 @@
   .mailing {
     gap: 8px;
     &__input {
-      padding: 18px 224px 18px 25px;
+      padding: 18px 25px;
+      min-width: 400px;
     }
   }
 }
