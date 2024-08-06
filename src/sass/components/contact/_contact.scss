@@ -1,16 +1,13 @@
 .contact {
   &__container {
     padding-inline: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-bottom: 60px;
   }
   &__title {
     @extend %titlesMobile;
     margin-bottom: 10px;
   }
-  &__second-title {
+  &__subtitle {
     font-weight: 700;
     font-size: 16px;
     text-align: center;
@@ -18,13 +15,16 @@
     margin-bottom: 20px;
   }
   &__map {
-    max-width: 290px;
+    width: 290px;
     border-radius: 10px;
   }
   &__wrapper {
     display: flex;
     flex-direction: column;
     gap: 25px;
+  }
+  &__contacs {
+    max-width: 290px;
   }
 }
 .contacs {
@@ -34,7 +34,6 @@
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.15), 4px 0 6px 0 rgba(0, 0, 0, 0.15),
     -5px 0 6px 0 rgba(0, 0, 0, 0.15), 0 -4px 6px 0 rgba(0, 0, 0, 0.15);
   background: $colorTextTertiary;
-  max-width: 290px;
   position: relative;
   padding: 10px 37px 51px 10px;
   &__card {
@@ -42,25 +41,6 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-  }
-  &__category {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5px;
-    line-height: 1.4;
-  }
-  &__title {
-    font-weight: 400;
-    font-size: 14px;
-    text-align: center;
-    color: $colorTextTitles;
-  }
-  &__information {
-    font-weight: 400;
-    font-size: 10px;
-    font-family: $fontTextSecondary;
-    color: $colorTextSecondary;
   }
 }
 .contact-icons {
@@ -82,6 +62,25 @@
     max-height: 16px;
   }
 }
+.adress {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  line-height: 1.4;
+  &__label {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: $colorTextTitles;
+  }
+  &__information {
+    font-weight: 400;
+    font-size: 10px;
+    font-family: $fontTextSecondary;
+    color: $colorTextSecondary;
+  }
+}
 @media (min-width: 576px) {
   .contact {
     &__container {
@@ -91,15 +90,18 @@
       @extend %titles576px;
       margin-bottom: 18px;
     }
-    &__second-title {
+    &__subtitle {
       margin-bottom: 32px;
       font-size: 32px;
     }
     &__map {
-      max-width: 506px;
+      width: 506px;
     }
     &__wrapper {
       gap: 35px;
+    }
+    &__contacs {
+      max-width: 506px;
     }
   }
 }
@@ -109,10 +111,10 @@
   &__card {
     gap: 15px;
   }
-  &__category {
-    gap: 5px;
-  }
-  &__title {
+}
+.adress {
+  gap: 5px;
+  &__label {
     font-size: 28px;
   }
   &__information {
@@ -138,28 +140,30 @@
     &__title {
       @extend %titles768px;
     }
-    &__second-title {
+    &__subtitle {
       margin-bottom: 50px;
       font-size: 36px;
     }
     &__map {
-      max-width: 680px;
+      width: 680px;
     }
     &__wrapper {
       gap: 50px;
     }
+    &__contacs {
+      max-width: 680px;
+    }
   }
 }
 .contacs {
-  max-width: 680px;
   padding: 34px 57px 130px 34px;
   &__card {
     gap: 20px;
   }
-  &__category {
-    gap: 7px;
-  }
-  &__title {
+}
+.adress {
+  gap: 7px;
+  &__label {
     font-size: 32px;
   }
   &__information {
@@ -185,29 +189,31 @@
     &__title {
       @extend %titles768px;
     }
-    &__second-title {
+    &__subtitle {
       margin-bottom: 106px;
       font-size: 32px;
     }
     &__map {
-      max-width: 493px;
+      width: 493px;
     }
     &__wrapper {
       flex-direction: row;
       gap: 85px;
     }
+    &__contacs {
+      max-width: 493px;
+    }
   }
 }
 .contacs {
-  max-width: 493px;
   padding: 23px 27px 111px 22px;
   &__card {
     gap: 14px;
   }
-  &__category {
-    gap: 6px;
-  }
-  &__title {
+}
+.adress {
+  gap: 6px;
+  &__label {
     font-size: 24px;
   }
   &__information {
@@ -233,28 +239,30 @@
     &__title {
       @extend %titlesDesktop;
     }
-    &__second-title {
+    &__subtitle {
       margin-bottom: 54px;
       font-size: 36px;
     }
     &__map {
-      max-width: 682px;
+      width: 682px;
     }
     &__wrapper {
       gap: 128px;
     }
+    &__contacs {
+      max-width: 682px;
+    }
   }
 }
 .contacs {
-  max-width: 682px;
   padding: 27px 21px 118px 30px;
   &__card {
     gap: 30px;
   }
-  &__category {
-    gap: 0px;
-  }
-  &__title {
+}
+.adress {
+  gap: 0px;
+  &__label {
     font-size: 32px;
   }
   &__information {
