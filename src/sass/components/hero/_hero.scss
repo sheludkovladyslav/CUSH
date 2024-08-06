@@ -69,6 +69,8 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    max-width: 120px;
+    width: 100%;
   }
 }
 
@@ -105,7 +107,7 @@
   }
 }
 
-@media (min-width: 566px) {
+@media (min-width: 567px) {
   .hero {
     &__title {
       font-size: 32px;
@@ -114,16 +116,16 @@
 
     &__container {
       justify-content: flex-start;
-      padding-top: 100px;
+      padding-top: 90px;
     }
 
     &__button {
       font-size: 16px;
-      padding: 20px;
+      padding: 25px 30px;
     }
 
     &__invitation {
-      gap: 15px;
+      gap: 20px;
     }
 
     &__selection {
@@ -137,7 +139,52 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
+  .hero {
+    &__container {
+      min-height: 463px;
+      padding-top: 80px;
+    }
+    &__title {
+      font-size: 42px;
+      max-width: 499px;
+    }
+
+    &__button {
+      padding: 25px 20px;
+    }
+
+    &__selection {
+      padding: 20px 30px 10px;
+      min-width: 407px;
+    }
+
+    &__form {
+      gap: 25px;
+    }
+
+    &__invitation {
+      gap: 25px;
+    }
+  }
+  .find-course {
+    &__choose {
+      min-width: 140px;
+    }
+    &__date {
+      max-width: 140px;
+      &__input {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .choose-course__select {
+    max-width: 140px;
+  }
+}
+
+@media (min-width: 1240px) {
   .hero {
     &__container {
       padding-top: 0;
@@ -221,7 +268,7 @@
     }
 
     &__invitation {
-      gap: 50px;
+      gap: 60px;
       bottom: 100px;
     }
 
