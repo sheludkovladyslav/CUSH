@@ -35,11 +35,5 @@
 <svg id='search' viewBox="0 0 59 59">
   <path d="M51.625 51.625L40.9312 40.9312M46.7083 27.0417C46.7083 37.9033 37.9033 46.7083 27.0417 46.7083C16.1801 46.7083 7.375 37.9033 7.375 27.0417C7.375 16.1801 16.1801 7.375 27.0417 7.375C37.9033 7.375 46.7083 16.1801 46.7083 27.0417Z" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
-<symbol id='right-arrow' viewBox="0 0 48 48">
-  <path d="M30 36L18 24L30 12" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-</symbol>
-<symbol id='left-arrow' viewBox="0 0 48 48">
-  <path d="M18 36L30 24L18 12" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-</symbol>
 </defs>
 </svg>
