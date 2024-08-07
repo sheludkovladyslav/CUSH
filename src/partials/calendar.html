@@ -4,153 +4,204 @@
       <svg class="calendar__svg calendar__plus">
         <use href="/src/images/icons.svg#plus"></use>
       </svg>
-        <select class="calendar__mounths mounths" name="mounth-select">
-          <option href="#" class="mounths__mounth" value="december" >Грудень 2024</option>
-          <option href="#" class="mounths__mounth" value="january">Січень 2024</option>
-          <option href="#" class="mounths__mounth" value="february">Лютий 2024</option>
-          <option href="#" class="mounths__mounth" value="march">Березень 2024</option>
-          <option href="#" class="mounths__mounth" value="april">Квітень 2024</option>
-          <option href="#" class="mounths__mounth" value="may">Травень 2024</option>
-          <option href="#" class="mounths__mounth" value="june">Червень 2024</option>
-          <option href="#" class="mounths__mounth" value="july">Липень 2024</option>
-          <option href="#" class="mounths__mounth" value="august">Серпень 2024</option>
-          <option href="#" class="mounths__mounth" value="september">Вересень 2024</option>
-          <option href="#" class="mounths__mounth" value="oktober">Жовтень 2024</option>
-          <option href="#" class="mounths__mounth" value="november">Листопад 2024</option>
-        </select>
+      <select
+        name="select-month"
+        id="month-select"
+        class="calendar__months months"
+        name="month-select"
+      >
+        <option href="#" class="months__month" value="december">
+          Грудень 2024
+        </option>
+        <option href="#" class="months__month" value="january">
+          Січень 2024
+        </option>
+        <option href="#" class="months__month" value="february">
+          Лютий 2024
+        </option>
+        <option href="#" class="months__month" value="march">
+          Березень 2024
+        </option>
+        <option href="#" class="months__month" value="april">
+          Квітень 2024
+        </option>
+        <option href="#" class="months__month" value="may">Травень 2024</option>
+        <option href="#" class="months__month" value="june">
+          Червень 2024
+        </option>
+        <option href="#" class="months__month" value="july">Липень 2024</option>
+        <option href="#" class="months__month" value="august">
+          Серпень 2024
+        </option>
+        <option href="#" class="months__month" value="september">
+          Вересень 2024
+        </option>
+        <option href="#" class="months__month" value="oktober">
+          Жовтень 2024
+        </option>
+        <option href="#" class="months__month" value="november">
+          Листопад 2024
+        </option>
+      </select>
       <svg class="calendar__svg calendar__search">
         <use href="/src/images/icons.svg#search"></use>
       </svg>
     </div>
     <div class="calendar__table table">
-      <div class="table__daysofweek">
-        <div class="table__dayofweek">
-          <span class="table__nameofday">Понеділок</span>
-        </div>
-        <div class="table__dayofweek">
-          <span class="table__nameofday">Вівторок</span>
-        </div>
-        <div class="table__dayofweek">
-          <span class="table__nameofday">Середа</span>
-        </div>
-        <div class="table__dayofweek">
-          <span class="table__nameofday">Четверг</span>
-        </div>
-        <div class="table__dayofweek">
-          <span class="table__nameofday">П'ятниця</span>
-        </div>
-        <div class="table__dayofweek">
-          <span class="table__nameofday">Субота</span>
-        </div>
-        <div class="table__dayofweek">
-          <span class="table__nameofday">Неділя</span>
-        </div>
-      </div>
-      <div class="table__days">
+      <div class="table__cards">
         <div class="table__day">
-          <span class="table__numberofday">1</span>
+          <div class="table__card">
+            <p class="table__numberofday">1</p>
+            <p class="table__nameofday table__nameofday--first">Понеділок</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">2</p>
+            <p class="table__nameofday">Понеділок</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">3</p>
+            <p class="table__nameofday">Понеділок</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">4</p>
+            <p class="table__nameofday">Понеділок</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">5</p>
+            <p class="table__nameofday">Понеділок</p>
+          </div>
         </div>
         <div class="table__day">
-          <span class="table__numberofday">2</span>
+          <div class="table__card">
+            <p class="table__numberofday">1</p>
+            <p class="table__nameofday table__nameofday--first">Вівторок</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">2</p>
+            <p class="table__nameofday">Вівторок</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">3</p>
+            <p class="table__nameofday">Вівторок</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">4</p>
+            <p class="table__nameofday">Вівторок</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">5</p>
+            <p class="table__nameofday">Вівторок</p>
+          </div>
         </div>
         <div class="table__day">
-          <span class="table__numberofday">3</span>
+          <div class="table__card">
+            <p class="table__numberofday">1</p>
+            <p class="table__nameofday table__nameofday--first">Середа</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">2</p>
+            <p class="table__nameofday">Середа</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">3</p>
+            <p class="table__nameofday">Середа</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">4</p>
+            <p class="table__nameofday">Середа</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">5</p>
+            <p class="table__nameofday">Середа</p>
+          </div>
         </div>
         <div class="table__day">
-          <span class="table__numberofday">4</span>
+          <div class="table__card">
+            <p class="table__numberofday">1</p>
+            <p class="table__nameofday table__nameofday--first">Четвер</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">2</p>
+            <p class="table__nameofday">Четвер</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">3</p>
+            <p class="table__nameofday">Четвер</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">4</p>
+            <p class="table__nameofday">Четвер</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">5</p>
+            <p class="table__nameofday">Четвер</p>
+          </div>
         </div>
         <div class="table__day">
-          <span class="table__numberofday">5</span>
+          <div class="table__card">
+            <p class="table__numberofday">1</p>
+            <p class="table__nameofday table__nameofday--first">П'ятниця</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">2</p>
+            <p class="table__nameofday">П'ятниця</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">3</p>
+            <p class="table__nameofday">П'ятниця</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">4</p>
+            <p class="table__nameofday">П'ятниця</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">5</p>
+            <p class="table__nameofday">П'ятниця</p>
+          </div>
         </div>
         <div class="table__day">
-          <span class="table__numberofday">6</span>
+          <div class="table__card">
+            <p class="table__numberofday">1</p>
+            <p class="table__nameofday table__nameofday--first">Субота</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">2</p>
+            <p class="table__nameofday">Субота</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">3</p>
+            <p class="table__nameofday">Субота</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">4</p>
+            <p class="table__nameofday">Субота</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">5</p>
+            <p class="table__nameofday">Субота</p>
+          </div>
         </div>
         <div class="table__day">
-          <span class="table__numberofday">7</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">8</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">9</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">10</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">11</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">12</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">13</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">14</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">15</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">16</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">17</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">18</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">19</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">20</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">21</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">22</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">23</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">24</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">25</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">26</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">27</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">28</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">29</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">30</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">31</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">1</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">2</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">3</span>
-        </div>
-        <div class="table__day">
-          <span class="table__numberofday">4</span>
+          <div class="table__card">
+            <p class="table__numberofday">1</p>
+            <p class="table__nameofday table__nameofday--first">Неділя</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">2</p>
+            <p class="table__nameofday">Неділя</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">3</p>
+            <p class="table__nameofday">Неділя</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">4</p>
+            <p class="table__nameofday">Неділя</p>
+          </div>
+          <div class="table__card">
+            <p class="table__numberofday">5</p>
+            <p class="table__nameofday">Неділя</p>
+          </div>
         </div>
       </div>
     </div>
