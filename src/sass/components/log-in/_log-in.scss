@@ -33,7 +33,6 @@
   &__form {
     display: flex;
     flex-direction: column;
-    width: 100%;
   }
 }
 
@@ -54,8 +53,6 @@
 
   &__inputs {
     margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
   }
 
@@ -100,6 +97,7 @@
   font-size: 24px;
   top: 15px;
   right: 15px;
+  cursor: pointer;
 }
 
 // teachers
@@ -126,5 +124,106 @@
     @extend %titlesMobile;
     text-transform: uppercase;
     line-height: 150%;
+  }
+}
+
+@media (min-width: 567px) {
+  .log-in {
+    &__container {
+      padding-inline: 25px;
+    }
+    &__title {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .login {
+    &__input {
+      width: 410px;
+      font-size: 16px;
+    }
+
+    &__inputs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .log-in {
+    &__container {
+      padding-inline: 35px;
+    }
+    &__title {
+      font-size: 36px;
+      margin-bottom: 35px;
+    }
+  }
+
+  .login {
+    &__input {
+      width: 540px;
+      font-size: 18px;
+    }
+
+    &__inputs {
+      margin-bottom: 20px;
+    }
+
+    &__button {
+      padding: 18px 65px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .log-in {
+    &__container {
+      width: 75%;
+      height: 75vh;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  .backdrop {
+    background-color: rgba(0, 0, 0, 0.444);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    animation: backdrop-animation 0.2s ease-in-out both;
+    z-index: 5000;
+  }
+  .login__inputs {
+    max-width: 640px;
+
+    flex-grow: 1;
+
+    &--register {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  .log-in__form {
+    align-items: center;
+  }
+}
+
+@keyframes backdrop-animation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
