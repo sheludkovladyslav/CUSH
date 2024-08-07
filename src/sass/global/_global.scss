@@ -34,3 +34,10 @@ img {
 .no-scroll {
   overflow: hidden;
 }
+
+button {
+  transition: transform 250ms ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
