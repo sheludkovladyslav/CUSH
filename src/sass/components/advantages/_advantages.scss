@@ -10,13 +10,13 @@
   &__title {
     @extend %titlesMobile;
     margin-bottom: 20px;
+    max-width: 468px;
+    line-height: calc(33px/24px);
   }
   &--another-color {
     color: $colorTextActive;
   }
-  &__photo {
-    max-width: 290px;
-  }
+
 }
 .advantage {
   display: flex;
@@ -25,6 +25,7 @@
   &__information {
     display: flex;
     align-items: center;
+  
     gap: 35px;
     &::before {
       content: '';
@@ -38,6 +39,9 @@
   }
   &__text {
     font-weight: 600;
+    font-size: 16px;
+    line-height: calc(19px/16px);
+    max-width: 386px;
   }
   &__information--padding {
     padding-top: 33px;
@@ -59,16 +63,15 @@
 @media (min-width: 576px) {
   .advantages {
     &__container {
-      padding-inline: 35px;
+      padding-inline: 25px;
       margin-bottom: 60px;
       gap: 60px;
     }
-    &__photo {
-      max-width: 504px;
-    }
     &__title {
-      font-size: 28px;
+      font-size: 32px;
       margin-bottom: 30px;
+      max-width: 473px;
+      line-height: calc(44px/32px);
     }
   }
   .advantage {
@@ -77,7 +80,9 @@
       gap: 35px;
     }
     &__text {
-      font-size: 16px;
+      font-size: 18px;
+      max-width: 400px;
+      line-height: calc(22px/16px);
     }
     &__information--padding {
       padding-top: 20px;
@@ -87,14 +92,13 @@
 @media (min-width: 768px) {
   .advantages {
     &__container {
-      padding-inline: 44px;
-    }
-    &__photo {
-      max-width: 680px;
+      padding-inline: 35px;
     }
     &__title {
       font-size: 32px;
-      margin-bottom: 40px;
+      margin-bottom: 35px;
+      max-width: 600px;
+      line-height: calc(44px/32px);
     }
   }
   .advantage {
@@ -102,11 +106,14 @@
     &__information {
       gap: 30px;
       &::before {
-        height: 60px;
+        height: 50px;
+        width: 50px;
       }
     }
     &__text {
-      font-size: 24px;
+      font-size: 20px;
+      max-width: 600px;
+      line-height: calc(27px/20px);
     }
     &__information--padding {
       padding-top: 25px;
@@ -117,9 +124,9 @@
   .advantages {
     &__container {
       flex-direction: row;
-      align-content: space-between;
+      justify-content: space-between;
       gap: 0;
-      padding-inline: 70px;
+      padding-inline: 75px;
       margin-bottom: 60px;
     }
     &__photo {
@@ -128,19 +135,21 @@
     &__title {
       font-weight: 800;
       font-size: 36px;
+      line-height: calc(49px/36px);
       margin-bottom: 35px;
+      text-align: left;
+      max-width: 538px;
     }
   }
   .advantage {
     gap: 35px;
     &__information {
       gap: 30px;
-      &::before {
-        height: 60px;
-      }
     }
     &__text {
       font-size: 24px;
+      max-width: 482px;
+      line-height: calc(33px/24px);
     }
     &__information--padding {
       padding-top: 35px;
@@ -150,7 +159,6 @@
 @media (min-width: 1920px) {
   .advantages {
     &__container {
-      padding-inline: 120px;
       margin-bottom: 60px;
     }
     &__photo {
@@ -158,7 +166,9 @@
     }
     &__title {
       font-size: 48px;
+      max-width: 690px;
       margin-bottom: 70px;
+      line-height: calc(33px/44px);
     }
   }
   .advantage {
@@ -167,10 +177,13 @@
       gap: 40px;
       &::before {
         height: 50px;
+        width: 50px;
       }
     }
     &__text {
       font-size: 24px;
+      max-width: 600px;
+      line-height: calc(33px/24px);
     }
     &__information--padding {
       padding-top: 35px;
