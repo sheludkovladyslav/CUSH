@@ -1,6 +1,7 @@
 .calendar {
   &__container {
     padding-inline: 15px;
+    max-width: 1860px;
   }
   &__management {
     display: flex;
@@ -62,8 +63,6 @@
     display: none;
   }
   &__nameofday {
-    text-orientation: upright;
-    writing-mode: vertical-rl;
     font-size: 10px;
     display: none;
     text-align: center;
@@ -71,6 +70,13 @@
     &--first {
       display: flex;
     }
+  }
+}
+@media (max-width: 1239px) {
+  .table__nameofday {
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    text-align: start;
   }
 }
 
@@ -142,10 +148,6 @@
 }
 @media (min-width: 1240px) {
   .calendar {
-    &__container {
-      padding-inline: 75px;
-    }
-
     &__management {
       margin-bottom: 30px;
     }
@@ -163,12 +165,24 @@
   }
 
   .table {
+    display: flex;
     &__nameofday {
       font-size: 20px;
     }
     &__card {
       padding-inline: 30px;
-      min-height: 300px;
+      min-height: 160px;
+      align-items: start;
+      justify-content: center;
+      padding-top: 10px;
+    }
+    &__cards {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__day {
+      flex-direction: column;
+      width: 100%;
     }
   }
 }
@@ -201,6 +215,7 @@
     &__card {
       padding-inline: 30px;
       min-height: 300px;
+      padding-top: 20px;
     }
   }
 }
