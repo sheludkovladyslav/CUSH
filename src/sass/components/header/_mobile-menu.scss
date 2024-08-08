@@ -98,10 +98,23 @@
 }
 
 .links__link {
-  transition: border-bottom 350ms ease-in-out, border-radius 350ms ease-in-out;
+  transition: border-radius 350ms ease-in-out, color 250ms ease-in-out;
   &:hover {
-    border-bottom: 2px solid $colorTextActive;
-    border-radius: 2px;
+    color: $colorTextActive;
+  }
+}
+.links__item {
+  &::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    color: $colorTextActive;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  &:hover::after {
+    width: 100%;
   }
 }
 
