@@ -91,8 +91,8 @@
 
     &__months {
       font-size: 16px;
-      padding-inline: 20px;
-      padding-block: 10px;
+      padding-inline: 30px;
+      padding-block: 12px;
     }
   }
 
@@ -104,6 +104,103 @@
     &__card {
       padding-inline: 15px;
       min-height: 230px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .calendar {
+    &__container {
+      padding-inline: 35px;
+    }
+
+    &__management {
+      margin-bottom: 20px;
+    }
+
+    &__svg {
+      width: 50px;
+      height: 50px;
+    }
+
+    &__months {
+      font-size: 18px;
+      padding-inline: 40px;
+      padding-block: 20px;
+    }
+  }
+
+  .table {
+    &__nameofday {
+      font-size: 18px;
+    }
+
+    &__card {
+      padding-inline: 20px;
+      min-height: 300px;
+    }
+  }
+}
+@media (min-width: 1240px) {
+  .calendar {
+    &__container {
+      padding-inline: 75px;
+    }
+
+    &__management {
+      margin-bottom: 30px;
+    }
+
+    &__svg {
+      width: 60px;
+      height: 60px;
+    }
+
+    &__months {
+      font-size: 20px;
+      padding-inline: 44px;
+      padding-block: 20px;
+    }
+  }
+
+  .table {
+    &__nameofday {
+      font-size: 20px;
+    }
+    &__card {
+      padding-inline: 30px;
+      min-height: 300px;
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .calendar {
+    &__container {
+      padding: 0;
+    }
+
+    &__management {
+      margin-bottom: 50px;
+    }
+
+    &__svg {
+      width: 80px;
+      height: 80px;
+    }
+
+    &__months {
+      font-size: 24px;
+      padding-inline: 45px;
+      padding-block: 25px;
+    }
+  }
+
+  .table {
+    &__nameofday {
+      font-size: 24px;
+    }
+    &__card {
+      padding-inline: 30px;
+      min-height: 300px;
     }
   }
 }
