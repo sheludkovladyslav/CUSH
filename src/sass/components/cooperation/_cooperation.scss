@@ -3,9 +3,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 143%;
   text-align: center;
   color: $colorTextPrimary;
   margin-bottom: 60px;
@@ -16,8 +13,13 @@
     align-items: center;
     gap: 20px;
   }
+  &__text {
+    font-weight: 600;
+    line-height: calc(20px / 14px);
+  }
   &__title {
     @extend %titlesMobile;
+    max-width: 275px;
   }
   &__btn {
     @extend %buttonAnimation;
@@ -27,5 +29,89 @@
     border-radius: 5px;
     background: $colorTextActive;
     margin-top: 11px;
+  }
+}
+@media (min-width: 576px) {
+  .cooperation {
+    &__container {
+      padding-inline: 35px;
+      gap: 35px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: calc(25px / 18px);
+    }
+    &__title {
+      @extend %titles576px;
+      max-width: 390px;
+    }
+    &__btn {
+      padding: 11px 20px;
+      margin-top: 0;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .cooperation {
+    &__container {
+      padding-inline: 44px;
+      align-items: flex-start;
+      gap: 25px;
+    }
+    &__text {
+      text-align: left;
+      font-size: 16px;
+      line-height: calc(20px / 16px);
+      max-width: 290px;
+    }
+    &__title {
+      font-size: 32px;
+    }
+    &__btn {
+      font-size: 14px;
+    }
+  }
+}
+@media (min-width: 1240px) {
+  .cooperation {
+    &__container {
+      padding-inline: 70px;
+      gap: 35px;
+    }
+    &__title {
+      @extend %titles1240px;
+      max-width: 473px;
+      text-align: left;
+    }
+    &__text {
+      font-size: 20px;
+      line-height: calc(27px / 20px);
+      max-width: 678px;
+    }
+    &__btn {
+      font-size: 16px;
+      padding: 15px 17px;
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .cooperation {
+    &__container {
+      padding-inline: 120px;
+      gap: 50px;
+    }
+    &__title {
+      @extend %titlesDesktop;
+      max-width: 550px;
+    }
+    &__text {
+      font-size: 24px;
+      line-height: calc(33px / 24px);
+      max-width: 747px;
+    }
+    &__btn {
+      font-size: 18px;
+      padding: 20px 25px;
+    }
   }
 }
