@@ -42,3 +42,41 @@ button {
     transform: scale(1.1);
   }
 }
+
+@media (min-width:320px) {
+  .title {
+    font-weight: 800;
+    font-size: 24px;
+    text-align: center;
+    color: $colorTextTitles;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width:567px){
+  .title{
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width:768px){
+  .title {
+    font-size: 36px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width:1240px){
+  .title {
+    font-size: 42px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width:1920px){
+  .title {
+    margin-bottom: 55px;
+    font-size: 48px;
+  }
+}
