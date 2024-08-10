@@ -1,0 +1,42 @@
+.reviews {
+  &__container {
+    padding-inline: 15px;
+    margin-bottom: 60px;
+  }
+}
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px 32px 20px;
+  border-top: solid 3px $colorTextActive;
+  &__name {
+    font-weight: 700;
+    font-size: 10px;
+  }
+  &__clas {
+    font-weight: 700;
+    font-size: 8px;
+    color: $colorTextActive;
+  }
+  &__informetion {
+    display: flex;
+    gap: 7px;
+  }
+  &__inf {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__photo {
+    border-radius: 50%;
+  }
+  &__text {
+    color: $colorTextSecondary;
+    text-align: center;
+    line-height: calc(36 / 24);
+    font-size: 12px;
+    font-family: $fontTextSecondary;
+  }
+}

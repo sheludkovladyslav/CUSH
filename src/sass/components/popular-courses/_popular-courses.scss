@@ -1,0 +1,232 @@
+.popular-courses {
+  &__container {
+    padding-inline: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    font-size: 16px;
+    max-width: 160px;
+    line-height: calc(22 / 16);
+    margin-bottom: 5px;
+    font-weight: 800;
+
+    &--active {
+      color: $colorTextActive;
+    }
+  }
+
+  &__description {
+    font-size: 10px;
+    color: $colorTextSecondary;
+    font-family: $fontTextSecondary;
+    line-height: calc(12 / 9);
+    margin-bottom: 15px;
+    max-width: 147px;
+  }
+
+  &__cards {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column-reverse;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 164px;
+    min-width: 121px;
+    max-width: 326px;
+    max-height: 400px;
+    padding-inline: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+  }
+
+  &__button {
+    padding: 10px 25px;
+    border-radius: 0px;
+    font-size: 12px;
+  }
+}
+
+.popular-course {
+  &--math {
+    display: none;
+    background-image: url(/src/images/popular-courses/math.jpg);
+  }
+  &--science {
+    display: none;
+    background-image: url(/src/images/popular-courses/science.jpg);
+  }
+  &--english {
+    background-image: url(/src/images/popular-courses/english.jpg);
+  }
+
+  &__title {
+    color: $colorTextTertiary;
+  }
+}
+@media (min-width: 567px) {
+  .popular-courses {
+    &__container {
+      padding-inline: 25px;
+      gap: 40px;
+    }
+    &__card {
+      flex-basis: calc((100% - 30px) / 3);
+      flex-grow: 1;
+      min-width: 0;
+    }
+  }
+
+  .popular-course {
+    &--math {
+      display: flex;
+    }
+    &--science {
+      display: flex;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .popular-courses {
+    &__container {
+      padding-inline: 35px;
+      gap: 0;
+    }
+    &__card {
+      flex-basis: calc((100% - 60px) / 3);
+      flex-grow: 1;
+      max-width: 146px;
+      min-height: 197px;
+    }
+
+    &__cards {
+      gap: 20px;
+      justify-content: flex-end;
+    }
+
+    &__title {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    &__description {
+      font-size: 12px;
+      max-width: 260px;
+      margin-bottom: 15px;
+    }
+
+    &__button {
+      font-size: 14px;
+      padding: 10px 26px;
+    }
+  }
+}
+
+@media (min-width: 1240px) {
+  .popular-courses {
+    &__container {
+      padding-inline: 80px;
+      gap: 0;
+    }
+    &__card {
+      flex-basis: calc((100% - 90px) / 3);
+      max-width: 235px;
+      min-height: 288px;
+      padding-left: 20px;
+      padding-bottom: 15px;
+    }
+
+    &__cards {
+      gap: 20px;
+    }
+
+    &__title {
+      font-size: 35px;
+      margin-bottom: 17px;
+    }
+
+    &__description {
+      font-size: 17px;
+      max-width: 420px;
+      line-height: calc(23 / 17);
+      margin-bottom: 33px;
+    }
+
+    &__button {
+      font-size: 16px;
+      padding: 16px 40px;
+    }
+  }
+
+  .popular-course {
+    &__title {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .popular-courses {
+    &__container {
+      padding: 0;
+      justify-content: space-between;
+    }
+    &__card {
+      flex-basis: calc((100% - 90px) / 3);
+      flex-grow: 1;
+      max-width: 326px;
+      min-height: 400px;
+      padding-bottom: 20px;
+      padding-left: 15px;
+    }
+
+    &__cards {
+      justify-content: flex-end;
+    }
+
+    &__title {
+      font-size: 48px;
+      margin-bottom: 0;
+    }
+
+    &__description {
+      font-size: 24px;
+      max-width: 560px;
+      line-height: calc(32 / 24);
+      margin-bottom: 0;
+    }
+
+    &__button {
+      font-size: 18px;
+      padding: 20px 57px;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 400px;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 23px;
+    }
+  }
+  .popular-course {
+    &__title {
+      font-size: 28px;
+    }
+  }
+}

@@ -1,41 +1,60 @@
 <section class="hero">
   <div class="hero__container container">
     <div class="hero__invitation">
-      <h1 class="hero__title">Це час, щоб навчитись навчатись</h1>
-      <button type="button">Запланувати перший урок</button>
+      <h1 class="hero__title">
+        Це час, щоб <span class="hero__title--capitalize">навчитись</span>
+        <span class="hero__title--lowerize"> Навчатись</span>
+      </h1>
+      <button type="button" class="hero__button button">
+        Запланувати перший урок
+      </button>
     </div>
     <div class="hero__selection">
-      <form action="" class="hero__form">
-        <div class="form__course">
-          <label for="course-selection">Курс</label>
-          <select name="course-select" id="course-selection">
-            <option value="math">Математика</option>
-            <option value="chemistry">Хіміяя</option>
-            <option value="english">Англійська мова</option>
-            <option value="ukrainian">Українська Мова</option>
-            <option value="history-of-ukraine">Історія України</option>
-            <option value="geography">Географія</option>
-            <option value="physics">Фізика</option>
-            <option value="biology">Біологія</option>
-            <option value="german">Німецька</option>
-            <option value="ukrainian-literature">Українська література</option>
-            <option value="psychology">Психологія</option>
-            <option value="history">Історія</option>
-          </select>
+      <form action="" class="hero__form find-course" id="findCourseForm">
+        <div class="find-course__wrapper">
+          <div class="find-course__choose choose-course">
+            <label
+              for="course-selection"
+              class="choose-course__label form-label"
+              >Курс</label
+            >
+            <select
+              name="course-select"
+              id="course-selection"
+              class="choose-course__select form-input"
+            >
+              <option value="math">Математика</option>
+              <option value="chemistry">Хімія</option>
+              <option value="english">Англійська мова</option>
+              <option value="ukrainian">Українська Мова</option>
+              <option value="history-of-ukraine">Історія України</option>
+              <option value="geography">Географія</option>
+              <option value="physics">Фізика</option>
+              <option value="biology">Біологія</option>
+              <option value="german">Німецька</option>
+              <option value="ukrainian-literature">
+                Українська література
+              </option>
+              <option value="psychology">Психологія</option>
+              <option value="history">Історія</option>
+            </select>
+          </div>
+          <div class="find-course__date date">
+            <label for="date__label" class="form-label">Дата</label>
+            <input
+              type="date"
+              id="start"
+              name="trip-start"
+              value="2018-07-22"
+              min="2024-01-01"
+              max="2026-12-31"
+              class="date__input form-input"
+            />
+          </div>
         </div>
-
-        <div class="form__date">
-          <input
-            type="date"
-            id="start"
-            name="trip-start"
-            value="2018-07-22"
-            min="2024-01-01"
-            max="2026-12-31"
-          />
-        </div>
-
-        <button type="submit">Знайти курс</button>
+        <button type="submit" class="button form__button" id="find-course">
+          Знайти курс
+        </button>
       </form>
     </div>
   </div>

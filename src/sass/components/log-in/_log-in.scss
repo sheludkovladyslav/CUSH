@@ -1,0 +1,285 @@
+.log-in {
+  position: relative;
+  &__container {
+    padding-inline: 15px;
+    background: linear-gradient(
+      180deg,
+      #cee9c9 0%,
+      #feeeb7 50%,
+      #ffcbc3 99.99%
+    );
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100000;
+  }
+
+  &__title {
+    @extend %titlesMobile;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    &--experience {
+      line-height: 130%;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.login {
+  &__input {
+    color: $colorTextSecondary;
+    padding: 23px 20px;
+    width: 100%;
+    border-radius: 15px;
+    border: 0.5px solid $colorLoginInput;
+
+    &--password {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__inputs {
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__forgot {
+    align-self: flex-start;
+    margin-bottom: 15px;
+  }
+
+  &__button {
+    background-color: transparent;
+    border: 2px solid $colorTextSecondary;
+    align-self: flex-start;
+    padding: 21px 60px;
+    color: $colorTextSecondary;
+    margin-bottom: 5px;
+
+    &--experience {
+      align-self: center;
+    }
+  }
+}
+
+.forgot {
+  &__text {
+    color: $colorTextActive;
+  }
+}
+
+.register {
+  width: 100%;
+  &__text {
+    color: $colorTextSecondary;
+    max-width: 190px;
+    line-height: calc(19 / 14);
+    &--active {
+      color: $colorTextActive;
+    }
+  }
+}
+
+.form__close {
+  position: absolute;
+  font-size: 24px;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+// teachers
+
+.experience {
+  &__label {
+    @extend %titlesMobile;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+
+  &__select {
+    border: 1px solid $colorTextSecondary;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: transparent;
+    outline: none;
+  }
+}
+
+.success {
+  &__message {
+    @extend %titlesMobile;
+    text-transform: uppercase;
+    line-height: 150%;
+  }
+}
+
+@media (min-width: 567px) {
+  .log-in {
+    &__container {
+      padding-inline: 25px;
+    }
+    &__title {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .login {
+    &__input {
+      width: 410px;
+      font-size: 16px;
+    }
+
+    &__inputs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .log-in {
+    &__container {
+      padding-inline: 35px;
+    }
+    &__title {
+      font-size: 36px;
+      margin-bottom: 35px;
+    }
+  }
+
+  .login {
+    &__input {
+      width: 540px;
+      font-size: 18px;
+    }
+
+    &__forgot {
+      margin-bottom: 20px;
+    }
+
+    &__button {
+      padding: 18px 65px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: 1240px) {
+  .log-in {
+    &__container {
+      width: 75%;
+      height: 75vh;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  .backdrop {
+    background-color: rgba(0, 0, 0, 0.444);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    animation: backdrop-animation 0.2s ease-in-out both;
+    z-index: 5000;
+  }
+  .login__inputs {
+    max-width: 640px;
+
+    flex-grow: 1;
+
+    &--register {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  .log-in__form {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1920px) {
+  .log-in__title {
+    font-size: 58px;
+    margin-bottom: 30px;
+  }
+
+  .log-in__form {
+    width: 100%;
+    max-width: 794px;
+    align-items: center;
+  }
+  .login__inputs {
+    max-width: 794px;
+    width: 100%;
+    gap: 25px;
+    &--register {
+      width: 100%;
+    }
+  }
+  .login__input {
+    width: 100%;
+    font-size: 24px;
+    padding: 32px 40px;
+    &:nth-child(2) {
+      max-width: 740px;
+    }
+  }
+
+  .login__buttons {
+    align-items: flex-start;
+    max-width: 740px;
+    width: 100%;
+  }
+
+  .login__forgot {
+    margin-bottom: 25px;
+    font-size: 18px;
+  }
+
+  .login__button {
+    font-size: 28px;
+    padding: 24px 90px;
+    margin-bottom: 10px;
+  }
+
+  .register__text {
+    font-size: 18px;
+    max-width: 250px;
+  }
+
+  .form__close {
+    font-size: 48px;
+    top: 40px;
+    right: 40px;
+  }
+}
+
+@keyframes backdrop-animation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

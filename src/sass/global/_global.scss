@@ -11,7 +11,7 @@ body {
 
 .container {
   min-width: 320px;
-  max-width: 1920px;
+  max-width: 1550px;
   margin: 0 auto;
 }
 
@@ -19,4 +19,25 @@ img {
   display: block;
   width: 100%;
   max-width: 100%;
+}
+
+.button {
+  background-color: $colorTextActive;
+  border-radius: 15px;
+  color: $colorTextTertiary;
+}
+
+.hidden {
+  display: none;
+  transition: display 1s ease-in;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+button {
+  transition: transform 250ms ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
 }

@@ -1,0 +1,312 @@
+.hero {
+  &__container {
+    min-height: 424px;
+    background-image: url(/src/images/hero/hero-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__invitation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167%;
+    text-align: center;
+    color: $colorTextTertiary;
+    max-width: 290px;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 1);
+  }
+
+  &__button {
+    padding: 18px 10px;
+  }
+
+  &__selection {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    background-color: $colorTextTertiary;
+    min-width: 300px;
+    border-top-left-radius: 15px;
+    padding: 15px 18px 10px;
+    max-width: 320px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.find-course {
+  &__choose {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 35px;
+    justify-content: space-between;
+  }
+
+  &__date {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 120px;
+    width: 100%;
+  }
+}
+
+.form {
+  &-input {
+    max-width: 120px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $colorInputs;
+    color: $colorTextActive;
+  }
+  &-label {
+    font-size: 12px;
+    color: $colorTextSecondary;
+  }
+
+  &__button {
+    align-self: center;
+    padding: 5px 15px;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &__input::-webkit-calendar-picker-indicator {
+    filter: invert(60%) sepia(16%) saturate(5241%) hue-rotate(323deg)
+      brightness(98%) contrast(80%);
+  }
+}
+
+@media (min-width: 567px) {
+  .hero {
+    &__title {
+      font-size: 32px;
+      max-width: 380px;
+    }
+
+    &__container {
+      justify-content: flex-start;
+      padding-top: 90px;
+    }
+
+    &__button {
+      font-size: 16px;
+      padding: 25px 30px;
+    }
+
+    &__invitation {
+      gap: 20px;
+    }
+
+    &__selection {
+      padding: 25px 25px 5px;
+      min-width: 330px;
+    }
+  }
+
+  .form__button {
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    &__container {
+      min-height: 463px;
+      padding-top: 80px;
+    }
+    &__title {
+      font-size: 42px;
+      max-width: 499px;
+    }
+
+    &__button {
+      padding: 25px 20px;
+    }
+
+    &__selection {
+      padding: 20px 30px 10px;
+      min-width: 407px;
+    }
+
+    &__form {
+      gap: 25px;
+    }
+
+    &__invitation {
+      gap: 25px;
+    }
+  }
+  .find-course {
+    &__choose {
+      min-width: 140px;
+    }
+    &__date {
+      max-width: 140px;
+      &__input {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .choose-course__select {
+    max-width: 140px;
+  }
+}
+
+@media (min-width: 1240px) {
+  .hero {
+    &__container {
+      padding-top: 0;
+      min-height: 800px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__form {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__invitation {
+      gap: 25px;
+      align-items: flex-start;
+      padding-left: 90px;
+      position: relative;
+      bottom: 50px;
+    }
+
+    &__button {
+      padding: 25px 20px;
+      font-size: 18px;
+    }
+
+    &__selection {
+      padding: 45px 30px;
+      min-width: 630px;
+      border-radius: 0;
+    }
+  }
+
+  .form {
+    &-input {
+      width: 175px;
+      max-width: 175px;
+      font-size: 16px;
+    }
+
+    &-label {
+      font-size: 16px;
+    }
+    &__button {
+      padding: 15px 25px;
+      border-radius: 0;
+    }
+  }
+
+  .hero__title {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 135%;
+    max-width: 630px;
+    text-align: left;
+    text-shadow: none;
+
+    &--capitalize {
+      text-transform: capitalize;
+    }
+
+    &--lowerize {
+      text-transform: lowercase;
+    }
+  }
+  .choose-course,
+  .date {
+    gap: 10px;
+  }
+
+  .find-course__wrapper {
+    gap: 42px;
+  }
+}
+@media (min-width: 1920px) {
+  .hero {
+    &__container {
+      min-height: 1008px;
+      max-width: 1680px;
+    }
+
+    &__invitation {
+      gap: 60px;
+      bottom: 100px;
+    }
+
+    &__button {
+      padding: 35px 30px;
+      font-size: 24px;
+    }
+
+    &__selection {
+      padding: 45px;
+      min-width: 874px;
+      bottom: -70px;
+    }
+  }
+
+  .form {
+    &-input {
+      width: 240px;
+      max-width: 240px;
+      font-size: 18px;
+    }
+
+    &-label {
+      font-size: 18px;
+    }
+    &__button {
+      padding: 20px 42px;
+      font-size: 18px;
+    }
+  }
+
+  .hero__title {
+    font-size: 96px;
+    line-height: 120%;
+    max-width: 1080px;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.6);
+  }
+
+  .find-course__wrapper {
+    gap: 60px;
+  }
+}

@@ -1,5 +1,4 @@
 @import './mobile-menu';
-
 .header {
   &__container {
     display: flex;
@@ -35,11 +34,15 @@
 
 .menu {
   &__list {
+    display: flex;
+    flex-direction: column;
     gap: 23px;
   }
 
   &__login {
     align-self: center;
+    gap: 10px;
+    display: flex;
   }
 
   &__socialmedia {
@@ -53,16 +56,11 @@
     color: $colorTextTertiary;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
     display: flex;
-    &:before {
-      content: '';
-      display: block;
-      width: 20px;
-      height: 20px;
-      background-image: url(/src/images/header/user.svg);
-      background-position: center;
-      background-repeat: no-repeat;
-    }
+  }
+  &__svg {
+    fill: $colorTextTertiary;
   }
 }
 
@@ -70,5 +68,109 @@
   &__svg {
     width: 32px;
     height: 32px;
+  }
+}
+
+@media (min-width: 566px) {
+  .header {
+    &__container {
+      padding: 25px;
+    }
+  }
+
+  .links__link {
+    font-size: 40px;
+  }
+
+  .log-in__link {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    &__container {
+      padding: 35px;
+    }
+  }
+
+  .links__link {
+    font-size: 40px;
+  }
+
+  .log-in__link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu {
+    padding-top: 138px;
+  }
+}
+
+@media (min-width: 566px) and (max-width: 1024px) {
+  .nav__list {
+    padding-inline: 35px;
+  }
+  .menu {
+    padding-top: 183px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media (min-width: 1024px) {
+  .socialmedia {
+    display: none;
+  }
+
+  .links__link {
+    font-size: 14px;
+  }
+
+  .header {
+    &__container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+      padding-inline: 30px;
+    }
+
+    &__nav {
+      display: flex;
+      flex-grow: 1;
+    }
+  }
+
+  .nav__wrapper {
+    display: flex;
+    align-content: center;
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .log-in__link {
+    color: $colorTextPrimary;
+  }
+
+  .menu__list {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .log-in__svg {
+    fill: $colorTextPrimary;
+  }
+
+  .log-in__container {
+    border-radius: 5px;
   }
 }
