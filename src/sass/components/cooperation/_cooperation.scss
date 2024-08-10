@@ -1,11 +1,9 @@
 .cooperation {
-  background: url(/src/images/cooperation/Group\ 1481.jpg);
+  background: url(/src/images/cooperation/teacher.png),url(/src/images/cooperation/blue-round.svg), url(/src/images/cooperation/green-round.svg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 143%;
+  background-size: 397px, 200px, 200px;
+  background-position-x: right, left, right;
+  background-position-y: top, bottom -10%, center;
   text-align: center;
   color: $colorTextPrimary;
   margin-bottom: 60px;
@@ -16,8 +14,14 @@
     align-items: center;
     gap: 20px;
   }
+  &__text {
+    font-weight: 600;
+    line-height: calc(20px / 14px);
+  }
   &__title {
     @extend %titlesMobile;
+    line-height: calc(33px / 24px);
+    max-width: 275px;
   }
   &__btn {
     @extend %buttonAnimation;
@@ -27,5 +31,99 @@
     border-radius: 5px;
     background: $colorTextActive;
     margin-top: 11px;
+  }
+}
+@media (min-width: 576px) {
+  .cooperation {
+    background-size: 505px, 300px, 300px;
+    &__container {
+      padding-inline: 35px;
+      gap: 35px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: calc(25px / 18px);
+    }
+    &__title {
+      @extend %titles576px;
+      max-width: 390px;
+      line-height: calc(49px / 36px);
+    }
+    &__btn {
+      padding: 11px 20px;
+      margin-top: 0;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .cooperation {
+    background-size: 500px, 200px, 200px;
+    background-position-y: top, top, center;
+    &__container {
+      padding-inline: 44px;
+      align-items: flex-start;
+      gap: 25px;
+    }
+    &__text {
+      text-align: left;
+      font-size: 16px;
+      line-height: calc(20px / 16px);
+      max-width: 290px;
+    }
+    &__title {
+      font-size: 32px;
+      line-height: calc(44px / 32px);
+    }
+    &__btn {
+      font-size: 14px;
+    }
+  }
+}
+@media (min-width: 1240px) {
+  .cooperation {
+    background-size: 500px, 300px, 300px;
+    background-position-y: top, top, center;
+    &__container {
+      padding-inline: 70px;
+      gap: 35px;
+    }
+    &__title {
+      @extend %titles1240px;
+      line-height: calc(57px / 42px);
+      max-width: 473px;
+      text-align: left;
+    }
+    &__text {
+      font-size: 20px;
+      line-height: calc(27px / 20px);
+      max-width: 678px;
+    }
+    &__btn {
+      font-size: 16px;
+      padding: 15px 17px;
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .cooperation {
+    background-size: 650px, 400px, 400px;
+    &__container {
+      padding-inline: 120px;
+      gap: 50px;
+    }
+    &__title {
+      @extend %titlesDesktop;
+      line-height: calc(65px / 48px);
+      max-width: 550px;
+    }
+    &__text {
+      font-size: 24px;
+      line-height: calc(33px / 24px);
+      max-width: 747px;
+    }
+    &__btn {
+      font-size: 18px;
+      padding: 20px 25px;
+    }
   }
 }
