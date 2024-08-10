@@ -2,50 +2,56 @@
   &__container {
     padding-inline: 15px;
     margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &__title {
     // @extend %titlesMobile;
     margin-bottom: 20px;
+    line-height: calc(33px / 24px);
   }
   &__cards {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     gap: 15px;
   }
 }
 .cours {
   position: relative;
-  max-width: 290px;
   color: $colorTextTertiary;
   overflow: hidden;
+  flex-basis: calc((100% - 15px)/1);
   &__text {
     font-size: 24px;
-    line-height: 133%;
+    line-height: calc(32px / 24px);
     font-family: $fontTextSecondary;
   }
   &__btn {
     font-weight: 500;
     text-align: center;
+    line-height: calc(19px / 14px);
     padding: 10px 20px;
     background-color: $colorTextPrimary;
     border-radius: 20px;
     color: $colorTextTertiary;
   }
-  &__photo {
-    max-width: 290px;
-  }
+
   &__title {
     position: absolute;
     bottom: 20px;
     left: 15px;
     font-weight: 700;
     font-size: 28px;
+    line-height: calc(38px / 28px);
   }
   &__overlay {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
     gap: 34px;
     padding: 38px 18px 20px 18px;
     background-color: rgba(255, 113, 91, 0.9);
@@ -81,28 +87,30 @@
     }
     &__title {
       // @extend %titles576px;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
+       line-height: calc(49px / 36px);
     }
     &__cards {
       gap: 45px;
     }
   }
   .cours {
-    max-width: 506px;
+   
+    flex-basis: calc((100% - 45px)/1);
     &__text {
-      font-size: 42px;
+      font-size: 24px;
+      line-height: calc(57px / 42px);
       line-height: auto;
     }
     &__btn {
-      font-size: 24px;
-      padding: 20px 22px;
-    }
-    &__photo {
-      max-width: 506px;
+      font-size: 20px;
+      line-height: calc(27px / 20px);
+      padding: 15px 17px;
     }
     &__title {
       font-weight: 700;
       font-size: 36px;
+      line-height: calc(49px / 36px);
       bottom: 25px;
       left: 30px;
     }
@@ -120,26 +128,28 @@
     &__title {
       // @extend %titles768px;
       margin-bottom: 35px;
+         line-height: calc(44px / 32px);
     }
     &__cards {
+      flex-direction: row;
       gap: 55px;
     }
   }
   .cours {
-    max-width: 315px;
+    flex-basis: calc((100% - 55px)/2);
     &__text {
       font-size: 26px;
+      line-height: calc(35px / 26px);
     }
     &__btn {
       font-size: 16px;
+      line-height: calc(22px / 16px);
       padding: 14px 15px;
-    }
-    &__photo {
-      max-width: 315px;
     }
     &__title {
       font-weight: 700;
       font-size: 24px;
+      line-height: calc(33px / 24px);
       bottom: 30px;
       left: 20px;
     }
@@ -152,26 +162,30 @@
 @media (min-width: 1240px) {
   .courses {
     &__container {
-      padding-inline: 70px;
+      padding-inline: 75px;
     }
     &__cards {
-      gap: 55px;
+      gap: 50px;
+    }
+    &__title{
+      font-size: 42px;
+      line-height: calc(57px / 42px);
     }
   }
   .cours {
-    max-width: 235px;
+    flex-basis: calc((100% - 50px)/4);
     &__text {
       font-size: 20px;
+      line-height: calc(27px / 20px);
     }
     &__btn {
       font-size: 16px;
+      line-height: calc(22px / 16px);
       padding: 12px 15px;
-    }
-    &__photo {
-      max-width: 235px;
     }
     &__title {
       font-size: 20px;
+      line-height: calc(27px / 20px);
       bottom: 14px;
       left: 14px;
     }
@@ -183,11 +197,12 @@
 }
 @media (min-width: 1920px) {
   .courses {
-    &__container {
-      padding-inline: 120px;
+    &__container{
+      padding: 0;
     }
     &__title {
       // @extend %titlesDesktop;
+      line-height: calc(65px / 48px);
       margin-bottom: 55px;
     }
     &__cards {
@@ -195,19 +210,19 @@
     }
   }
   .cours {
-    max-width: 326px;
+    flex-basis: calc((100% - 70px)/4);
     &__text {
       font-size: 24px;
+      line-height: calc(32px / 24px);
     }
     &__btn {
       font-size: 18px;
+      line-height: calc(25px / 18px);
       padding: 20px 44px;
-    }
-    &__photo {
-      max-width: 326px;
     }
     &__title {
       font-size: 28px;
+      line-height: calc(38px / 28px);
       bottom: 25px;
       left: 27px;
     }
