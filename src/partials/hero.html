@@ -1,13 +1,16 @@
 <section class="hero">
   <div class="hero__container container">
     <div class="hero__invitation">
-      <h1 class="hero__title">Це час, щоб навчитись Навчатись</h1>
+      <h1 class="hero__title">
+        Це час, щоб <span class="hero__title--capitalize">навчитись</span>
+        <span class="hero__title--lowerize"> Навчатись</span>
+      </h1>
       <button type="button" class="hero__button button">
         Запланувати перший урок
       </button>
     </div>
     <div class="hero__selection">
-      <form action="" class="hero__form find-course">
+      <form action="" class="hero__form find-course" id="findCourseForm">
         <div class="find-course__wrapper">
           <div class="find-course__choose choose-course">
             <label
@@ -21,7 +24,7 @@
               class="choose-course__select form-input"
             >
               <option value="math">Математика</option>
-              <option value="chemistry">Хіміяя</option>
+              <option value="chemistry">Хімія</option>
               <option value="english">Англійська мова</option>
               <option value="ukrainian">Українська Мова</option>
               <option value="history-of-ukraine">Історія України</option>
@@ -36,7 +39,6 @@
               <option value="history">Історія</option>
             </select>
           </div>
-
           <div class="find-course__date date">
             <label for="date__label" class="form-label">Дата</label>
             <input
@@ -50,8 +52,9 @@
             />
           </div>
         </div>
-
-        <button type="submit" class="button form__button">Знайти курс</button>
+        <button type="submit" class="button form__button" id="find-course">
+          Знайти курс
+        </button>
       </form>
     </div>
   </div>
