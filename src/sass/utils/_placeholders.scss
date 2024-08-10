@@ -11,7 +11,18 @@
   text-align: center;
   color: $colorTextTitles;
 }
-
+%titles576px {
+  font-weight: 800;
+  font-size: 36px;
+  text-align: center;
+  color: $colorTextTitles;
+}
+%titles768px {
+  font-weight: 800;
+  font-size: 42px;
+  text-align: center;
+  color: $colorTextTitles;
+}
 %titlesDesktop {
   font-size: 48px;
 }
