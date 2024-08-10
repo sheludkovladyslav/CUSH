@@ -1,10 +1,13 @@
 .contact {
   &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-inline: 15px;
     margin-bottom: 60px;
   }
   &__title {
-    @extend %titlesMobile;
+    //@extend %titlesMobile;
     margin-bottom: 10px;
   }
   &__subtitle {
@@ -87,7 +90,7 @@
       padding-inline: 35px;
     }
     &__title {
-      @extend %titles576px;
+      //@extend %titles576px;
       margin-bottom: 18px;
     }
     &__subtitle {
@@ -104,41 +107,42 @@
       max-width: 506px;
     }
   }
-}
-.contacs {
-  max-width: 506px;
-  padding: 25px 28px 96px 30px;
-  &__card {
-    gap: 15px;
+  .contacs {
+    max-width: 506px;
+    padding: 25px 28px 96px 30px;
+    &__card {
+      gap: 15px;
+    }
+  }
+  .adress {
+    gap: 5px;
+    &__label {
+      font-size: 28px;
+    }
+    &__information {
+      font-size: 18px;
+    }
+  }
+  .contact-icons {
+    gap: 25px;
+    max-width: 214px;
+    padding: 11px 12px;
+  }
+  .contact-icon {
+    &__svg {
+      max-width: 28px;
+      max-height: 28px;
+    }
   }
 }
-.adress {
-  gap: 5px;
-  &__label {
-    font-size: 28px;
-  }
-  &__information {
-    font-size: 18px;
-  }
-}
-.contact-icons {
-  gap: 25px;
-  max-width: 214px;
-  padding: 11px 12px;
-}
-.contact-icon {
-  &__svg {
-    max-width: 28px;
-    max-height: 28px;
-  }
-}
+
 @media (min-width: 768px) {
   .contact {
     &__container {
       padding-inline: 44px;
     }
     &__title {
-      @extend %titles768px;
+      //@extend %titles768px;
     }
     &__subtitle {
       margin-bottom: 50px;
@@ -154,40 +158,41 @@
       max-width: 680px;
     }
   }
-}
-.contacs {
-  padding: 34px 57px 130px 34px;
-  &__card {
-    gap: 20px;
+  .contacs {
+    padding: 34px 57px 130px 34px;
+    &__card {
+      gap: 20px;
+    }
+  }
+  .adress {
+    gap: 7px;
+    &__label {
+      font-size: 32px;
+    }
+    &__information {
+      font-size: 24px;
+    }
+  }
+  .contact-icons {
+    gap: 35px;
+    max-width: 288px;
+    padding: 15px 16px;
+  }
+  .contact-icon {
+    &__svg {
+      max-width: 37px;
+      max-height: 37px;
+    }
   }
 }
-.adress {
-  gap: 7px;
-  &__label {
-    font-size: 32px;
-  }
-  &__information {
-    font-size: 24px;
-  }
-}
-.contact-icons {
-  gap: 35px;
-  max-width: 288px;
-  padding: 15px 16px;
-}
-.contact-icon {
-  &__svg {
-    max-width: 37px;
-    max-height: 37px;
-  }
-}
+
 @media (min-width: 1240px) {
   .contact {
     &__container {
       padding-inline: 70px;
     }
     &__title {
-      @extend %titles768px;
+      //@extend %titles768px;
     }
     &__subtitle {
       margin-bottom: 106px;
@@ -204,40 +209,41 @@
       max-width: 493px;
     }
   }
-}
-.contacs {
-  padding: 23px 27px 111px 22px;
-  &__card {
-    gap: 14px;
+  .contacs {
+    padding: 23px 27px 111px 22px;
+    &__card {
+      gap: 14px;
+    }
+  }
+  .adress {
+    gap: 6px;
+    &__label {
+      font-size: 24px;
+    }
+    &__information {
+      font-size: 18px;
+    }
+  }
+  .contact-icons {
+    gap: 25px;
+    max-width: 224px;
+    padding: 8px 16px;
+  }
+  .contact-icon {
+    &__svg {
+      max-width: 28px;
+      max-height: 28px;
+    }
   }
 }
-.adress {
-  gap: 6px;
-  &__label {
-    font-size: 24px;
-  }
-  &__information {
-    font-size: 18px;
-  }
-}
-.contact-icons {
-  gap: 25px;
-  max-width: 224px;
-  padding: 8px 16px;
-}
-.contact-icon {
-  &__svg {
-    max-width: 28px;
-    max-height: 28px;
-  }
-}
+
 @media (min-width: 1920px) {
   .contact {
     &__container {
       padding-inline: 120px;
     }
     &__title {
-      @extend %titlesDesktop;
+      //@extend %titlesDesktop;
     }
     &__subtitle {
       margin-bottom: 54px;
@@ -253,30 +259,31 @@
       max-width: 682px;
     }
   }
-}
-.contacs {
-  padding: 27px 21px 118px 30px;
-  &__card {
+  .contacs {
+    padding: 27px 21px 118px 30px;
+    &__card {
+      gap: 30px;
+    }
+  }
+  .adress {
+    gap: 0px;
+    &__label {
+      font-size: 32px;
+    }
+    &__information {
+      font-size: 24px;
+    }
+  }
+  .contact-icons {
     gap: 30px;
+    max-width: 256px;
+    padding: 8px 20px;
   }
-}
-.adress {
-  gap: 0px;
-  &__label {
-    font-size: 32px;
+  .contact-icon {
+    &__svg {
+      max-width: 32px;
+      max-height: 32px;
+    }
   }
-  &__information {
-    font-size: 24px;
-  }
-}
-.contact-icons {
-  gap: 30px;
-  max-width: 256px;
-  padding: 8px 20px;
-}
-.contact-icon {
-  &__svg {
-    max-width: 32px;
-    max-height: 32px;
-  }
+  
 }
