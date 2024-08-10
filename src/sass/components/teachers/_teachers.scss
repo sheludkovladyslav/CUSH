@@ -5,7 +5,6 @@
   }
 
   &__title {
-    @extend %titlesMobile;
     margin-bottom: 20px;
   }
 
@@ -60,9 +59,6 @@
       padding-inline: 25px;
     }
 
-    &__title {
-      @extend %titles567px;
-    }
   }
 
   .teacher {
@@ -81,9 +77,6 @@
       padding-inline: 30px;
     }
 
-    &__title {
-      @extend %titles768px;
-    }
 
     &__cards {
       flex-direction: row;
@@ -143,10 +136,6 @@
       padding-inline: 70px;
     }
 
-    &__title {
-      @extend %titles1240px;
-    }
-
     &__cards {
       gap: 20px;
     }
@@ -179,9 +168,6 @@
       padding: 0;
     }
 
-    &__title {
-      @extend %titlesDesktop;
-    }
 
     &__cards {
       gap: 0;

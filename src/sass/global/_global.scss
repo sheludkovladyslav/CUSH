@@ -8,6 +8,11 @@ body {
   font-size: 14px;
   color: $colorTextPrimary;
   position: relative;
+  background: url(/src/images/cooperation/green-round.svg),url(/src/images/cooperation/green-round.svg), url(/src/images/cooperation/blue-round.svg),url(/src/images/cooperation/blue-round.svg);
+  background-repeat: no-repeat;
+  background-size: 200px,250px, 300px, 500px;
+  background-position-y: bottom 4%,bottom 25%, bottom 30%, bottom 50%;
+  background-position-x: right,right, left, left;
 }
 
 .container {

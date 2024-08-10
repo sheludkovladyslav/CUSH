@@ -7,7 +7,6 @@
     margin-bottom: 60px;
   }
   &__title {
-    @extend %titlesMobile;
     margin-bottom: 10px;
   }
   &__subtitle {
@@ -90,7 +89,6 @@
       padding-inline: 35px;
     }
     &__title {
-      @extend %titles576px;
       margin-bottom: 18px;
     }
     &__subtitle {
@@ -141,9 +139,6 @@
     &__container {
       padding-inline: 44px;
     }
-    &__title {
-      // @extend %titles768px;
-    }
     &__subtitle {
       margin-bottom: 50px;
       font-size: 36px;
@@ -190,9 +185,6 @@
   .contact {
     &__container {
       padding-inline: 70px;
-    }
-    &__title {
-      @extend %titles1240px;
     }
     &__subtitle {
       margin-bottom: 106px;
@@ -243,7 +235,6 @@
       padding-inline: 120px;
     }
     &__title {
-      @extend %titlesDesktop;
       margin-bottom: 10px;
     }
     &__subtitle {

@@ -5,7 +5,6 @@
   }
 
   &__title {
-    @extend %titlesMobile;
     margin-bottom: 20px;
   }
 
@@ -72,9 +71,6 @@
       padding-inline: 25px;
     }
 
-    &__title {
-      @extend %titles567px;
-    }
 
     &__card {
       padding: 20px 36px 50px;
@@ -109,9 +105,6 @@
       padding-inline: 35px;
     }
 
-    &__title {
-      @extend %titles768px;
-    }
 
     &__card {
       padding: 20px 36px 50px;
@@ -200,9 +193,6 @@
       padding-inline: 70px;
     }
 
-    &__title {
-      @extend %titles1240px;
-    }
 
     &__card {
       min-height: 326px;
@@ -238,9 +228,6 @@
       max-width: 1394px;
     }
 
-    &__title {
-      @extend %titlesDesktop;
-    }
 
     &__card {
       min-height: 326px;

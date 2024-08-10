@@ -7,7 +7,6 @@
     align-items: center;
   }
   &__title {
-    @extend %titlesMobile;
     line-height: calc(33px / 24px);
   }
   &__cards {
@@ -51,7 +50,6 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 34px;
     padding: 38px 18px 20px 18px;
     background-color: rgba(255, 113, 91, 0.9);
     position: absolute;
@@ -85,7 +83,6 @@
       padding-inline: 35px;
     }
     &__title {
-      @extend %titles576px;
       line-height: calc(49px / 36px);
     }
     &__cards {
@@ -112,7 +109,6 @@
       left: 30px;
     }
     &__overlay {
-      gap: 98px;
       padding: 45px 30px 35px 30px;
     }
   }
@@ -123,16 +119,17 @@
       padding-inline: 44px;
     }
     &__title {
-      @extend %titles768px;
       line-height: calc(44px / 32px);
     }
     &__cards {
       flex-direction: row;
-      gap: 55px;
+      gap: 0px;
+      row-gap: 70px;
+      justify-content: space-between;
     }
   }
   .cours {
-    flex-basis: calc((100% - 55px) / 2);
+    flex-basis: calc((100% - 110px) / 2);
     &__text {
       font-size: 26px;
       line-height: calc(35px / 26px);
@@ -150,7 +147,6 @@
       left: 20px;
     }
     &__overlay {
-      gap: 45px;
       padding: 30px 22px 22px 22px;
     }
   }
@@ -160,16 +156,15 @@
     &__container {
       padding-inline: 75px;
     }
-    &__cards {
-      gap: 50px;
-    }
     &__title {
-      @extend %titles1240px;
       line-height: calc(57px / 42px);
+    }
+    &__cards{
+      row-gap: 55px;
     }
   }
   .cours {
-    flex-basis: calc((100% - 50px) / 4);
+    flex-basis: calc((100% - 150px) / 4);
     &__text {
       font-size: 20px;
       line-height: calc(27px / 20px);
@@ -186,7 +181,6 @@
       left: 14px;
     }
     &__overlay {
-      gap: 23px;
       padding: 15px;
     }
   }
@@ -197,15 +191,14 @@
       padding: 0;
     }
     &__title {
-      @extend %titlesDesktop;
       line-height: calc(65px / 48px);
     }
-    &__cards {
-      gap: 70px;
+    &__cards{
+      row-gap: 85px;
     }
   }
   .cours {
-    flex-basis: calc((100% - 70px) / 4);
+    flex-basis: calc((100% - 210px) / 4);
     &__text {
       font-size: 24px;
       line-height: calc(32px / 24px);
@@ -222,7 +215,6 @@
       left: 27px;
     }
     &__overlay {
-      gap: 78px;
       padding: 47px 20px 22px 20px;
     }
   }

@@ -22,7 +22,6 @@
   }
 
   &__title {
-    @extend %titlesMobile;
     text-transform: uppercase;
     margin-bottom: 20px;
     &--experience {
@@ -103,7 +102,6 @@
 
 .experience {
   &__label {
-    @extend %titlesMobile;
     font-size: 14px;
     margin-bottom: 5px;
     font-weight: 600;
@@ -120,7 +118,6 @@
 
 .success {
   &__message {
-    @extend %titlesMobile;
     text-transform: uppercase;
     line-height: 150%;
   }
