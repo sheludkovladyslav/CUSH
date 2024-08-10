@@ -7,7 +7,7 @@
     margin-bottom: 60px;
   }
   &__title {
-    //@extend %titlesMobile;
+    @extend %titlesMobile;
     margin-bottom: 10px;
   }
   &__subtitle {
@@ -90,7 +90,7 @@
       padding-inline: 35px;
     }
     &__title {
-      //@extend %titles576px;
+      @extend %titles576px;
       margin-bottom: 18px;
     }
     &__subtitle {
@@ -142,7 +142,7 @@
       padding-inline: 44px;
     }
     &__title {
-      //@extend %titles768px;
+      @extend %titles768px;
     }
     &__subtitle {
       margin-bottom: 50px;
@@ -192,7 +192,7 @@
       padding-inline: 70px;
     }
     &__title {
-      //@extend %titles768px;
+      @extend %titles1240px;
     }
     &__subtitle {
       margin-bottom: 106px;
@@ -243,7 +243,8 @@
       padding-inline: 120px;
     }
     &__title {
-      //@extend %titlesDesktop;
+      @extend %titlesDesktop;
+      margin-bottom: 10px;
     }
     &__subtitle {
       margin-bottom: 54px;
@@ -285,5 +286,4 @@
       max-height: 32px;
     }
   }
-  
 }
