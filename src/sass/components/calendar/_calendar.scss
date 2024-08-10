@@ -1,0 +1,336 @@
+.calendar {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: $colorTextTertiary;
+  z-index: 100000;
+  padding-top: 100px;
+  &__container {
+    padding-inline: 15px;
+    max-width: 1860px;
+  }
+  &__management {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  &__svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  &__months {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+    background: $colorBackground;
+    border: 2px solid $colorLoginInput;
+    border-radius: 38px;
+    font-weight: 500;
+    font-size: 14px;
+    align-items: center;
+    color: $colorTextTitles;
+    display: flex;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    &::-ms-expand {
+      display: none;
+    }
+  }
+
+  &__selector {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+    background: $colorBackground;
+    border: 2px solid $colorLoginInput;
+    border-radius: 38px;
+    font-weight: 500;
+    font-size: 14px;
+    color: $colorTextTitles;
+    display: flex;
+  }
+}
+
+.months {
+  &__month {
+    text-align: center;
+  }
+}
+.table {
+  display: flex;
+  background: $colorBackground;
+  border: 1px solid $colorTextPrimary;
+  &__cards {
+    width: 100%;
+  }
+  &__day {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__card {
+    border: 1px solid $colorTextPrimary;
+    display: flex;
+    width: 100%;
+    padding-inline: 5px;
+    min-height: 141px;
+    max-height: 141px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__events {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+  }
+
+  &__numberofday {
+    display: none;
+  }
+  &__nameofday {
+    font-size: 10px;
+    display: none;
+    text-align: center;
+    color: $colorTextSecondary;
+    &--first {
+      display: flex;
+    }
+  }
+
+  &__nameofevent {
+    font-size: 10px;
+    min-height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: $colorEventCalendar;
+  }
+}
+@media (max-width: 1239px) {
+  .table__nameofday,
+  .table__nameofevent {
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    text-align: start;
+  }
+
+  .table__text {
+    height: 100%;
+  }
+
+  .table__events,
+  .table__card,
+  .table__nameofevent {
+    overflow-y: scroll;
+  }
+}
+
+.to-top {
+  opacity: 0;
+}
+
+.to-top__button {
+  padding: 20px;
+  z-index: 999;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: opacity 0.3s ease;
+  border-radius: 50%;
+  transition: transform 0.5s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.to-top__svg {
+  width: 30px;
+  height: 30px;
+  fill: $colorTextTertiary;
+}
+
+@media (min-width: 567px) {
+  .calendar {
+    &__container {
+      padding-inline: 25px;
+    }
+
+    &__management {
+      margin-bottom: 15px;
+    }
+
+    &__svg {
+      width: 38px;
+      height: 38px;
+    }
+
+    &__months,
+    &__selector {
+      font-size: 16px;
+      padding-inline: 30px;
+      padding-block: 12px;
+    }
+  }
+
+  .table {
+    &__nameofday {
+      font-size: 14px;
+    }
+
+    &__card {
+      padding-inline: 10px;
+      min-height: 230px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .calendar {
+    &__container {
+      padding-inline: 35px;
+    }
+
+    &__management {
+      margin-bottom: 20px;
+    }
+
+    &__svg {
+      width: 50px;
+      height: 50px;
+    }
+
+    &__months {
+      font-size: 18px;
+      padding-inline: 40px;
+      padding-block: 20px;
+    }
+  }
+
+  .table {
+    &__nameofday {
+      font-size: 16px;
+    }
+
+    &__card {
+      padding-inline: 20px;
+      min-height: 300px;
+    }
+
+    &__nameofevent {
+      font-size: 12px;
+    }
+
+    &__events {
+      gap: 15px;
+    }
+  }
+}
+@media (min-width: 1240px) {
+  .calendar {
+    &__management {
+      margin-bottom: 30px;
+    }
+
+    &__svg {
+      width: 60px;
+      height: 60px;
+    }
+
+    &__months {
+      font-size: 20px;
+      padding-inline: 44px;
+      padding-block: 20px;
+    }
+  }
+
+  .table {
+    display: flex;
+    &__nameofday {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    &__card {
+      // padding-inline: 30px;
+      min-height: 160px;
+      align-items: start;
+      justify-content: center;
+      padding-top: 10px;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    &__cards {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__day {
+      flex-direction: column;
+      width: 100%;
+    }
+    &__events {
+      align-items: center;
+      justify-content: center;
+      padding-top: 0;
+      width: 100%;
+    }
+
+    &__nameofevent {
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .calendar {
+    &__container {
+      padding: 0;
+    }
+
+    &__management {
+      margin-bottom: 50px;
+    }
+
+    &__svg {
+      width: 80px;
+      height: 80px;
+    }
+
+    &__months {
+      font-size: 24px;
+      padding-inline: 45px;
+      padding-block: 25px;
+    }
+  }
+
+  .table {
+    &__nameofday {
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
+    &__card {
+      padding-inline: 30px;
+      min-height: 300px;
+      padding-top: 20px;
+    }
+
+    &__nameofevent {
+      font-size: 18px;
+    }
+  }
+}
