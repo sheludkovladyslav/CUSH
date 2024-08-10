@@ -5,10 +5,10 @@
         <img
           src="/src/images/header/cush-logo.svg"
           alt=""
-          class="header-logo__image"
+          class="Лого компанії"
         />
       </a>
-      <h2 class="header__logo-text"></h2>
+      <h2 class="header__logo-text">ЦУШ</h2>
     </div>
     <nav class="header__nav nav" data-menu>
       <div class="menu nav__list">
@@ -53,6 +53,43 @@
             <button class="log-in__link" data-login-open>
               Особистий профіль
             </button>
+
+            <div class="header__find find">
+              <button class="log-in__link--find">
+                <svg
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="log-in__svg log-in__svg--find"
+                >
+                  <path
+                    d="M19.7622 18.6372L15.5811 14.485C16.8514 12.969 17.6164 11.021 17.6164 8.90045C17.6164 4.07564 13.6651 0.151672 8.80681 0.151672C3.95025 0.151672 -0.000976562 4.07564 -0.000976562 8.89871C-0.000976562 13.7218 3.95025 17.6457 8.80681 17.6457C10.9438 17.6457 12.9037 16.886 14.4301 15.6245L18.6112 19.7767C18.7708 19.9353 18.9779 20.0137 19.1867 20.0137C19.3937 20.0137 19.6025 19.9353 19.7622 19.7767C20.0797 19.4631 20.0797 18.9526 19.7622 18.6372ZM1.62548 8.89871C1.62548 4.96603 4.84682 1.76691 8.80681 1.76691C12.7668 1.76691 15.9899 4.96603 15.9899 8.89871C15.9899 12.8314 12.7668 16.0323 8.80681 16.0323C4.84682 16.0323 1.62548 12.8314 1.62548 8.89871Z"
+                    fill="#2C2C2C"
+                  />
+                </svg>
+              </button>
+
+              <div class="find__search-box search-box">
+                <div class="search-box__row">
+                  <input
+                    type="text"
+                    id="searchBoxInput"
+                    placeholder="Знайдіть щось..."
+                    autocomplete="off"
+                    class="search-box__input"
+                  />
+                  <button class="search-box__find">Знайти</button>
+                </div>
+
+                <div class="search-box__result result">
+                  <ul class="result__list">
+                    <!-- Результати пошуку будуть тут -->
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
           <ul class="socialmedia menu__socialmedia">
             <li class="socialmedia__item">

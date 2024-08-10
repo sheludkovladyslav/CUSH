@@ -1,16 +1,16 @@
 .contact {
   &__container {
-    padding-inline: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-inline: 15px;
     margin-bottom: 60px;
   }
   &__title {
     @extend %titlesMobile;
     margin-bottom: 10px;
   }
-  &__second-title {
+  &__subtitle {
     font-weight: 700;
     font-size: 16px;
     text-align: center;
@@ -18,9 +18,16 @@
     margin-bottom: 20px;
   }
   &__map {
-    max-width: 290px;
+    width: 290px;
     border-radius: 10px;
-    margin-bottom: 25px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  &__contacs {
+    max-width: 290px;
   }
 }
 .contacs {
@@ -30,7 +37,6 @@
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.15), 4px 0 6px 0 rgba(0, 0, 0, 0.15),
     -5px 0 6px 0 rgba(0, 0, 0, 0.15), 0 -4px 6px 0 rgba(0, 0, 0, 0.15);
   background: $colorTextTertiary;
-  max-width: 290px;
   position: relative;
   padding: 10px 37px 51px 10px;
   &__card {
@@ -38,25 +44,6 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-  }
-  &__category {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5px;
-    line-height: 1.4;
-  }
-  &__title {
-    font-weight: 400;
-    font-size: 14px;
-    text-align: center;
-    color: $colorTextTitles;
-  }
-  &__information {
-    font-weight: 400;
-    font-size: 10px;
-    font-family: $fontTextSecondary;
-    color: $colorTextSecondary;
   }
 }
 .contact-icons {
@@ -76,5 +63,227 @@
   &__svg {
     max-width: 16px;
     max-height: 16px;
+  }
+}
+.adress {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  line-height: 1.4;
+  &__label {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: $colorTextTitles;
+  }
+  &__information {
+    font-weight: 400;
+    font-size: 10px;
+    font-family: $fontTextSecondary;
+    color: $colorTextSecondary;
+  }
+}
+@media (min-width: 576px) {
+  .contact {
+    &__container {
+      padding-inline: 35px;
+    }
+    &__title {
+      @extend %titles576px;
+      margin-bottom: 18px;
+    }
+    &__subtitle {
+      margin-bottom: 32px;
+      font-size: 32px;
+    }
+    &__map {
+      width: 506px;
+    }
+    &__wrapper {
+      gap: 35px;
+    }
+    &__contacs {
+      max-width: 506px;
+    }
+  }
+  .contacs {
+    max-width: 506px;
+    padding: 25px 28px 96px 30px;
+    &__card {
+      gap: 15px;
+    }
+  }
+  .adress {
+    gap: 5px;
+    &__label {
+      font-size: 28px;
+    }
+    &__information {
+      font-size: 18px;
+    }
+  }
+  .contact-icons {
+    gap: 25px;
+    max-width: 214px;
+    padding: 11px 12px;
+  }
+  .contact-icon {
+    &__svg {
+      max-width: 28px;
+      max-height: 28px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .contact {
+    &__container {
+      padding-inline: 44px;
+    }
+    &__title {
+      // @extend %titles768px;
+    }
+    &__subtitle {
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
+    &__map {
+      width: 680px;
+    }
+    &__wrapper {
+      gap: 50px;
+    }
+    &__contacs {
+      max-width: 680px;
+    }
+  }
+  .contacs {
+    padding: 34px 57px 130px 34px;
+    &__card {
+      gap: 20px;
+    }
+  }
+  .adress {
+    gap: 7px;
+    &__label {
+      font-size: 32px;
+    }
+    &__information {
+      font-size: 24px;
+    }
+  }
+  .contact-icons {
+    gap: 35px;
+    max-width: 288px;
+    padding: 15px 16px;
+  }
+  .contact-icon {
+    &__svg {
+      max-width: 37px;
+      max-height: 37px;
+    }
+  }
+}
+
+@media (min-width: 1240px) {
+  .contact {
+    &__container {
+      padding-inline: 70px;
+    }
+    &__title {
+      @extend %titles1240px;
+    }
+    &__subtitle {
+      margin-bottom: 106px;
+      font-size: 32px;
+    }
+    &__map {
+      width: 493px;
+    }
+    &__wrapper {
+      flex-direction: row;
+      gap: 85px;
+    }
+    &__contacs {
+      max-width: 493px;
+    }
+  }
+  .contacs {
+    padding: 23px 27px 111px 22px;
+    &__card {
+      gap: 14px;
+    }
+  }
+  .adress {
+    gap: 6px;
+    &__label {
+      font-size: 24px;
+    }
+    &__information {
+      font-size: 18px;
+    }
+  }
+  .contact-icons {
+    gap: 25px;
+    max-width: 224px;
+    padding: 8px 16px;
+  }
+  .contact-icon {
+    &__svg {
+      max-width: 28px;
+      max-height: 28px;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .contact {
+    &__container {
+      padding-inline: 120px;
+    }
+    &__title {
+      @extend %titlesDesktop;
+      margin-bottom: 10px;
+    }
+    &__subtitle {
+      margin-bottom: 54px;
+      font-size: 36px;
+    }
+    &__map {
+      width: 682px;
+    }
+    &__wrapper {
+      gap: 128px;
+    }
+    &__contacs {
+      max-width: 682px;
+    }
+  }
+  .contacs {
+    padding: 27px 21px 118px 30px;
+    &__card {
+      gap: 30px;
+    }
+  }
+  .adress {
+    gap: 0px;
+    &__label {
+      font-size: 32px;
+    }
+    &__information {
+      font-size: 24px;
+    }
+  }
+  .contact-icons {
+    gap: 30px;
+    max-width: 256px;
+    padding: 8px 20px;
+  }
+  .contact-icon {
+    &__svg {
+      max-width: 32px;
+      max-height: 32px;
+    }
   }
 }
