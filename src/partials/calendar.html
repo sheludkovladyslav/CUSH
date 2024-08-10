@@ -1,15 +1,21 @@
 <section class="calendar">
   <div class="calendar__container container">
     <div class="calendar__management">
-      <svg class="calendar__svg calendar__plus">
-        <use href="/src/images/icons.svg#plus"></use>
-      </svg>
       <div id="month-select" class="calendar__months months">
         <p href="#" class="months__month" value="july">Липень 2024</p>
       </div>
-      <svg class="calendar__svg calendar__search">
-        <use href="/src/images/icons.svg#search"></use>
-      </svg>
+      <div class="course__selector">
+        <select
+          name="select-course"
+          class="calendar__selector"
+          id="course-selector"
+        >
+          <option value="" selected disabled>Виберіть курс...</option>
+          <option value="math">Математика</option>
+          <option value="english">Англійська мова</option>
+          <option value="chemistry">Хімія</option>
+        </select>
+      </div>
     </div>
     <div class="calendar__table table">
       <div class="table__cards"></div>
