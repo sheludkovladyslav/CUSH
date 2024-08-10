@@ -1,0 +1,342 @@
+.footer {
+  &__container {
+    padding: 21px 15px 40px;
+    border-top: 0.5px solid $colorBorders;
+    position: relative;
+  }
+  &__information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__text {
+    font-size: 10px;
+    color: $colorTextSecondary;
+    margin-bottom: 10px;
+    font-family: $fontTextSecondary;
+  }
+  &--another-color {
+    color: $colorTextActive;
+  }
+  &__list-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 10px;
+    color: $colorTextSecondary;
+    font-family: $fontTextSecondary;
+  }
+  &__contacts {
+    display: flex;
+    gap: 8px;
+    &::before {
+      content: '';
+      background-image: url(/src/images/footer/phone.svg);
+      width: 11px;
+      height: 13px;
+      background-repeat: no-repeat;
+    }
+  }
+  &__svg {
+    max-height: 12px;
+    max-width: 12px;
+  }
+  &__logo {
+    margin-bottom: 5px;
+  }
+  &__sponsors {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  &__agreement {
+    font-weight: 500;
+    font-size: 10px;
+    color: $colorTextSecondary;
+    text-align: center;
+  }
+  &__form {
+    margin-bottom: 14px;
+  }
+  &__copyright {
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    color: $colorTextSecondary;
+    bottom: 0;
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+  &__image {
+    max-width: 30px;
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
+.sponsor {
+  &__photo {
+    height: 15px;
+    width: 72px;
+    object-fit: contain;
+  }
+}
+.mailing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  &__title {
+    color: $colorTextTitles;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__input {
+    padding: 14px 16px;
+    min-width: 185px;
+    border: 1px solid $colorBorders;
+  }
+  &__btn {
+    padding: 10px 14px;
+    font-weight: 500;
+    font-size: 12px;
+    background-color: $colorTextActive;
+    color: $colorTextTertiary;
+  }
+}
+
+.footer__contact--email::before {
+  background-image: url(/src/images/footer/email.svg);
+}
+
+.footer__contact--site::before {
+  background-image: url(/src/images/footer/location.svg);
+}
+@media (min-width: 576px) {
+  .footer {
+    &__container {
+      padding: 20px 35px;
+    }
+    &__information {
+      margin-bottom: 60px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 144%;
+      margin-bottom: 24px;
+    }
+    &__list-contacts {
+      gap: 20px;
+      font-size: 14px;
+    }
+    &__contacts {
+      display: flex;
+      gap: 14px;
+      &::before {
+        content: '';
+        width: 17px;
+        height: 17px;
+      }
+    }
+    &__svg {
+      max-height: 17px;
+      max-width: 17px;
+    }
+    &__logo {
+      margin-bottom: 5px;
+    }
+    &__sponsors {
+      gap: 35px;
+    }
+    &__agreement {
+      font-size: 12px;
+    }
+    &__form {
+      margin-bottom: 7px;
+    }
+    &__copyright {
+      font-size: 12px;
+    }
+  }
+  .logo {
+    &__image {
+      max-width: 68px;
+    }
+    &__text {
+      font-size: 28px;
+    }
+  }
+  .sponsor {
+    &__photo {
+      height: 31px;
+      width: 146px;
+    }
+  }
+  .mailing {
+    align-items: flex-start;
+    gap: 12px;
+    &__title {
+      font-size: 24px;
+    }
+    &__input {
+      padding: 18px 25px;
+      min-width: 462px;
+    }
+    &__btn {
+      padding: 20px 40px;
+      font-size: 18px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    &__container {
+      padding: 20px 35px;
+    }
+    &__information {
+      margin-bottom: 40px;
+    }
+    &__text {
+      font-size: 20px;
+      line-height: 130%;
+      margin-bottom: 20px;
+    }
+    &__list-contacts {
+      gap: 16px;
+      font-size: 16px;
+    }
+    &__contacts {
+      gap: 15px;
+      &::before {
+        content: '';
+        width: 22px;
+        height: 22px;
+      }
+    }
+    &__agreement {
+      text-align: left;
+    }
+    &__svg {
+      max-height: 26px;
+      max-width: 22px;
+    }
+    &__logo {
+      margin-bottom: 20px;
+    }
+    &__copyright {
+      font-size: 14px;
+    }
+  }
+  .logo {
+    &__text {
+      font-size: 32px;
+    }
+  }
+  .mailing {
+    &__btn {
+      padding: 20px 40px;
+      font-size: 18px;
+    }
+  }
+}
+@media (min-width: 1240px) {
+  .footer {
+    &__container {
+      padding: 70px 35px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+    }
+    &__information {
+      margin-bottom: 0px;
+      flex-grow: 1;
+    }
+    &__text {
+      font-size: 20px;
+      line-height: 130%;
+      margin-bottom: 20px;
+    }
+    &__list-contacts {
+      gap: 16px;
+      font-size: 16px;
+    }
+    &__wrapper {
+      flex-grow: 1;
+    }
+    &__contacts {
+      gap: 15px;
+      &::before {
+        content: '';
+        width: 23px;
+        height: 23px;
+      }
+    }
+    &__svg {
+      max-height: 23px;
+      max-width: 23px;
+    }
+    &__logo {
+      margin-bottom: 20px;
+    }
+    &__form {
+      margin-bottom: 0px;
+    }
+
+    &__sponsors {
+      flex-grow: 1;
+      justify-content: center;
+    }
+    &__copyright {
+      font-size: 18px;
+      position: absolute;
+      bottom: 0;
+      left:40%;
+    }
+  }
+  .mailing {
+    align-items: flex-start;
+    gap: 8px;
+    &__input {
+      padding: 14px 20px;
+      min-width: 400px;
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .footer {
+    &__container {
+      padding: 120px 35px;
+    }
+    &__text {
+      margin-bottom: 30px;
+    }
+    &__list-contacts {
+      font-size: 18px;
+    }
+    &__contacts {
+      gap: 15px;
+    }
+    &__logo {
+      margin-bottom: 22px;
+    }
+  }
+  .mailing {
+    gap: 8px;
+    &__input {
+      padding: 18px 25px;
+      min-width: 400px;
+    }
+  }
+}

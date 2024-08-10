@@ -4,6 +4,7 @@
     padding-inline: 15px;
     padding-top: 40px;
     margin-bottom: 60px;
+    max-width: 100%;
     background: transparent;
 
     background-image: url(/src/images/about-us/pencil-case.svg),
@@ -39,4 +40,130 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+}
+
+@media (min-width: 567px) {
+  .about-us {
+    &__container {
+      background-image: url(/src/images/about-us/pencil-case.svg),
+        url(/src/images/about-us/book-apple.svg),
+        url(/src/images/about-us/book-ruler.svg),
+        url(/src/images/about-us/backboard.svg),
+        url(/src/images/about-us/light-blue-1.png),
+        url(/src/images/about-us/ligh-blue-center.png),
+        url(/src/images/about-us/circle.svg),
+        url(/src/images/about-us/circle.svg);
+      padding-bottom: 50px;
+      background-size: 80px, 80px, 90px, 70px, 50%, 60%, 27px, 27px;
+      background-position-y: top 20%, top, bottom, bottom -10%, top, center,
+        center, center;
+      background-position-x: right, left, left, right, left, center, right 15%,
+        left 15%;
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+    &__paragraph {
+      max-width: 516px;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+  }
+
+  .paragraphs__container {
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us {
+    &__container {
+      background-image: url(/src/images/about-us/pencil-case.svg),
+        url(/src/images/about-us/book-apple.svg),
+        url(/src/images/about-us/book-ruler.svg),
+        url(/src/images/about-us/backboard.svg),
+        url(/src/images/about-us/light-blue-1.png),
+        url(/src/images/about-us/ligh-blue-center.png),
+        url(/src/images/about-us/circle.svg),
+        url(/src/images/about-us/circle.svg);
+      background-size: 90px, 90px, 100px, 100px, 70%, 70%, 33px, 33px;
+      background-position-y: top 20%, top, bottom, bottom -10%, top, center,
+        top 45%, bottom 25%;
+      background-position-x: right, left, left, right, left, center, right 15%,
+        left 15%;
+    }
+
+    &__title {
+      font-size: 36px;
+    }
+    &__paragraph {
+      max-width: 696px;
+      font-size: 18px;
+      line-height: 1.56;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-us {
+    &__container {
+      background-image: url(/src/images/about-us//desktop/pencil-case.svg),
+        url(/src/images/about-us/desktop/book-apple.svg),
+        url(/src/images/about-us/desktop/backboard.svg),
+        url(/src/images/about-us/desktop/book-ruler.svg),
+        url(/src/images/about-us/light-blue-1.png),
+        url(/src/images/about-us/ligh-blue-center.png),
+        url(/src/images/about-us/desktop/circle.svg),
+        url(/src/images/about-us/desktop/circle.svg);
+      background-size: 125px, 135px, 115px, 115px, 55%, 70%, 33px, 33px;
+      background-position-y: top 5%, top, bottom, bottom, top, center, top 43%,
+        bottom 37%;
+      background-position-x: right, left, left, right, left, center, right 15%,
+        left 15%;
+      padding-bottom: 200px;
+      padding-top: 70px;
+    }
+
+    &__title {
+      font-size: 42px;
+      margin-bottom: 80px;
+    }
+    &__paragraph {
+      max-width: 914px;
+      line-height: 1.7;
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .about-us {
+    &__container {
+      background-image: url(/src/images/about-us//desktop/pencil-case.svg),
+        url(/src/images/about-us/desktop/book-apple.svg),
+        url(/src/images/about-us/desktop/backboard.svg),
+        url(/src/images/about-us/desktop/book-ruler.svg),
+        url(/src/images/about-us/light-blue-1.png),
+        url(/src/images/about-us/ligh-blue-center.png),
+        url(/src/images/about-us/desktop/circle.svg),
+        url(/src/images/about-us/desktop/paw-green.svg),
+        url(/src/images/about-us/desktop/paw-purple.svg),
+        url(/src/images/about-us/desktop/paw-yellow.svg);
+      background-size: 160px, 175px, 155px, 155px, 35%, 70%, 54px, 130px, 130px,
+        130px;
+      background-position-y: top 5%, top, bottom, bottom, top, center,
+        bottom 15%, top 25%, center, bottom 25%;
+      background-position-x: right, left, left, right, left, center, left 15%,
+        right 25%, left 40%, right 30%;
+    }
+
+    &__title {
+      font-size: 48px;
+    }
+    &__paragraph {
+      max-width: 1464px;
+      font-size: 24px;
+    }
+  }
 }
