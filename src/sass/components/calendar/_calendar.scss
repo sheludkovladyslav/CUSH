@@ -1,4 +1,13 @@
 .calendar {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: $colorTextTertiary;
+  z-index: 100000;
+  padding-top: 100px;
   &__container {
     padding-inline: 15px;
     max-width: 1860px;
@@ -128,6 +137,10 @@
   .table__nameofevent {
     overflow-y: scroll;
   }
+}
+
+.to-top {
+  opacity: 0;
 }
 
 .to-top__button {

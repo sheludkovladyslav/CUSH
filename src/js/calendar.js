@@ -397,3 +397,39 @@ courseSelector.addEventListener('change', function () {
       renderCalendar(julyDefault);
   }
 });
+
+const calendarButton = document.querySelector('.to-top__button');
+let lastScrollPosition = 0;
+const scrollLimit = 1500;
+
+const calendar = document.querySelector('.calendar');
+const closeBtn = document.querySelector('.form__close--calendar');
+
+const handleScroll = () => {
+  const currentScrollPosition = window.scrollY;
+
+  if (
+    currentScrollPosition > scrollLimit &&
+    currentScrollPosition > lastScrollPosition
+  ) {
+    window.scrollTo(0, scrollLimit);
+  } else {
+    lastScrollPosition = currentScrollPosition;
+  }
+};
+
+const showCalendar = () => {
+  calendar.style.display = 'block';
+  window.addEventListener('scroll', handleScroll);
+};
+
+const closeCalendar = () => {
+  calendar.style.display = 'none';
+  window.removeEventListener('scroll', handleScroll);
+};
+
+closeBtn.addEventListener('click', () => {
+  closeCalendar();
+});
+
+calendarButton.addEventListener('click', showCalendar);
