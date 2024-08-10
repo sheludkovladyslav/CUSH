@@ -130,6 +130,26 @@
   }
 }
 
+.to-top__button {
+  padding: 20px;
+  z-index: 999;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: opacity 0.3s ease;
+  border-radius: 50%;
+  transition: transform 0.5s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.to-top__svg {
+  width: 30px;
+  height: 30px;
+  fill: $colorTextTertiary;
+}
+
 @media (min-width: 567px) {
   .calendar {
     &__container {
