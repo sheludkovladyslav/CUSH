@@ -89,7 +89,7 @@
     }
     &__title {
       @extend %titles1240px;
-      line-height: calc(42px / 57px);
+      line-height: calc(57px / 42px);
       max-width: 473px;
       text-align: left;
     }
