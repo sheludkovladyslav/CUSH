@@ -24,5 +24,6 @@
     document.body.classList.remove('no-scroll');
     menu.classList.toggle('hidden');
     openBtn.innerHTML = inputName;
+    document.querySelector('.to-top').style.opacity = '1';
   });
 })();
