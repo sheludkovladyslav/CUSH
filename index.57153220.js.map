@@ -1,0 +1,1 @@
+{"mappings":"AAAeA,SAASC,cAAc,iBAE/BC,iBAAiB,SAAS,WAC/BC,MAAM,sC","sources":["src/js/mailing.js"],"sourcesContent":["const button = document.querySelector('.mailing__btn');\n\nbutton.addEventListener('click', () => {\n  alert('Ви успішно підписались на розсилку!');\n});\n"],"names":["document","querySelector","addEventListener","alert"],"version":3,"file":"index.57153220.js.map"}
