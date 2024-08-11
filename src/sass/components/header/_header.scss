@@ -100,7 +100,7 @@
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
-  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease; /* Плавні переходи */
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
@@ -186,7 +186,6 @@
     padding-top: 183px;
   }
 }
-
 
 @media (min-width: 1024px) {
   .socialmedia {
@@ -286,7 +285,7 @@
 
   .header {
     &__container {
-      padding-inline: 120px;
+      padding-inline: 0;
     }
   }
 

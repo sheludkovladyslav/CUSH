@@ -23,6 +23,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    min-height: 331px;
   }
 
   &__card::before {
@@ -69,11 +70,12 @@
   .start {
     &__container {
       padding-inline: 25px;
+      margin-bottom: 70px;
     }
-
 
     &__card {
       padding: 20px 36px 50px;
+      min-height: 350px;
       &::before {
         width: 120px;
         height: 120px;
@@ -103,8 +105,8 @@
   .start {
     &__container {
       padding-inline: 35px;
+      margin-bottom: 80px;
     }
-
 
     &__card {
       padding: 20px 36px 50px;
@@ -142,6 +144,7 @@
   .start {
     &__container {
       padding-inline: 60px;
+      margin-bottom: 85px;
     }
 
     &__title {
@@ -191,12 +194,16 @@
   .start {
     &__container {
       padding-inline: 70px;
+      margin-bottom: 110px;
     }
-
 
     &__card {
       min-height: 326px;
+      padding-top: 40px;
+      padding-bottom: 50px;
+
       flex-basis: calc((100% - 60px) / 4);
+      justify-content: flex-start;
       &::before {
         width: 110px;
         height: 110px;
@@ -225,9 +232,8 @@
   .start {
     &__container {
       padding: 0;
-      max-width: 1394px;
+      margin-bottom: 130px;
     }
-
 
     &__card {
       min-height: 326px;
@@ -251,7 +257,7 @@
 
     &__description {
       font-size: 18px;
-      max-width: 250px;
+      max-width: 320px;
     }
   }
 }

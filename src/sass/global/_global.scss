@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  scroll-padding: 50px;
 }
 
 body {
@@ -8,11 +9,14 @@ body {
   font-size: 14px;
   color: $colorTextPrimary;
   position: relative;
-  background: url(/src/images/cooperation/green-round.svg),url(/src/images/cooperation/green-round.svg), url(/src/images/cooperation/blue-round.svg),url(/src/images/cooperation/blue-round.svg);
+  background: url(/src/images/cooperation/green-round.svg),
+    url(/src/images/cooperation/green-round.svg),
+    url(/src/images/cooperation/blue-round.svg),
+    url(/src/images/cooperation/blue-round.svg);
   background-repeat: no-repeat;
-  background-size: 200px,250px, 300px, 500px;
-  background-position-y: bottom 4%,bottom 25%, bottom 30%, bottom 50%;
-  background-position-x: right,right, left, left;
+  background-size: 200px, 250px, 300px, 500px;
+  background-position-y: bottom 4%, bottom 25%, bottom 30%, bottom 50%;
+  background-position-x: right, right, left, left;
 }
 
 .container {
@@ -35,7 +39,6 @@ img {
 
 .hidden {
   display: none;
-  transition: display 1s ease-in;
 }
 .no-scroll {
   overflow: hidden;
@@ -48,7 +51,7 @@ button {
   }
 }
 
-@media (min-width:320px) {
+@media (min-width: 320px) {
   .title {
     font-weight: 800;
     font-size: 24px;
@@ -58,28 +61,28 @@ button {
   }
 }
 
-@media (min-width:567px){
-  .title{
+@media (min-width: 567px) {
+  .title {
     font-size: 32px;
     margin-bottom: 30px;
   }
 }
 
-@media (min-width:768px){
+@media (min-width: 768px) {
   .title {
     font-size: 36px;
     margin-bottom: 35px;
   }
 }
 
-@media (min-width:1240px){
+@media (min-width: 1240px) {
   .title {
     font-size: 42px;
     margin-bottom: 40px;
   }
 }
 
-@media (min-width:1920px){
+@media (min-width: 1920px) {
   .title {
     margin-bottom: 55px;
     font-size: 48px;

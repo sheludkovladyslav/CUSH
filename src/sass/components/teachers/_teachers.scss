@@ -57,8 +57,8 @@
   .teachers {
     &__container {
       padding-inline: 25px;
+      margin-bottom: 70px;
     }
-
   }
 
   .teacher {
@@ -75,8 +75,8 @@
   .teachers {
     &__container {
       padding-inline: 30px;
+      margin-bottom: 80px;
     }
-
 
     &__cards {
       flex-direction: row;
@@ -102,6 +102,7 @@
   .teachers {
     &__container {
       padding-inline: 60px;
+      margin-bottom: 85px;
     }
 
     &__title {
@@ -134,6 +135,7 @@
   .teachers {
     &__container {
       padding-inline: 70px;
+      margin-bottom: 110px;
     }
 
     &__cards {
@@ -166,8 +168,8 @@
   .teachers {
     &__container {
       padding: 0;
+      margin-bottom: 130px;
     }
-
 
     &__cards {
       gap: 0;

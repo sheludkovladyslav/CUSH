@@ -1,234 +1,225 @@
 .reviews {
-    &__container {
-      padding-inline: 15px;
-      margin-bottom: 60px;
-    }
-    &__title {
-      //@extend %titlesMobile;
-      margin-bottom: 20px;
-      line-height: calc(33px/24px);
-    }
-    &__people {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 25px;
-    }
+  &__container {
+    padding-inline: 15px;
+    margin-bottom: 60px;
   }
-  .person {
+  &__title {
+    line-height: calc(33px / 24px);
+  }
+  &__people {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+}
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 37px 30px 26px 30px;
+  max-width: 290px;
+  height: 330px;
+  background-image: url(/src/images/reviews/background-reviews.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &:hover {
+    box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.25);
+  }
+  &__text {
+    font-family: $fontTextMobileHeader;
+    font-weight: 500;
+    font-size: 20px;
+    color: $colorTextTitles;
+    line-height: calc(22px / 20px);
+  }
+  &__information {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  &__avatar {
+    height: 45px;
+    width: 45px;
+  }
+  &__img {
+    border-radius: 50%;
+  }
+  &__description {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
-    padding: 37px 30px 26px 30px;
-    max-width: 290px;
-    height: 330px;
-    background-image: url(/src/images/reviews/background-reviews.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    &:hover {
-      box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.25);
+    gap: 0;
+  }
+  &__name {
+    //font-family: $fontTextPrimary;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(22px / 16px);
+  }
+  &__class {
+    //font-family: $fontTextPrimary;
+    line-height: calc(19px / 14px);
+    font-weight: 500;
+    color: $colorTextSecondary;
+  }
+}
+@media (min-width: 576px) {
+  .reviews {
+    &__container {
+      padding-inline: 25px;
+      margin-bottom: 70px;
     }
+    &__title {
+      line-height: calc(49px / 36px);
+    }
+    &__people {
+      gap: 31px;
+    }
+  }
+  .person {
+    //gap: 67px;
+    max-width: 506px;
+    height: 577px;
+    padding: 65px 53px 46px 53px;
+    max-width: 506px;
     &__text {
-      font-family: $fontTextMobileHeader;
-      font-weight: 500;
-      font-size: 20px;
-      color: $colorTextTitles;
-      line-height: calc(22px/20px);
+      font-size: 36px;
+      line-height: calc(40px / 36px);
     }
     &__information {
-      display: flex;
-      align-items: center;
-      gap: 15px;
+      gap: 19px;
     }
     &__avatar {
-      height: 45px;
-      width: 45px;
-    }
-    &__img{
-        border-radius: 50%;
-    }
-    &__description {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0;
+      height: 79px;
+      width: 79px;
     }
     &__name {
-      //font-family: $fontTextPrimary;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: calc(22px/16px);
+      font-size: 24px;
+      line-height: calc(33px / 24px);
     }
     &__class {
-      //font-family: $fontTextPrimary;
-      line-height: calc(19px/14px);
-      font-weight: 500;
-      color: $colorTextSecondary;
+      font-size: 20px;
+      line-height: calc(27px / 20px);
     }
   }
-  @media (min-width: 576px) {
-    .reviews {
-      &__container {
-        padding-inline: 25px;
-      }
-      &__title {
-        font-size: 36px;
-        line-height: calc(49px/36px);
-        margin-bottom: 50px;
-      }
-      &__people {
-        gap: 31px;
-      }
+}
+@media (min-width: 768px) {
+  .reviews {
+    &__container {
+      padding-inline: 35px;
+      margin-bottom: 80px;
     }
-    .person {
-      //gap: 67px;
-      max-width: 506px;
-      height: 577px;
-      padding: 65px 53px 46px 53px;
-      max-width: 506px;
-      &__text {
-        font-size: 36px;
-        line-height: calc(40px/36px);
-      }
-      &__information {
-        gap: 19px;
-      }
-      &__avatar {
-        height: 79px;
-        width: 79px;
-      }
-      &__name {
-        font-size: 24px;
-        line-height: calc(33px/24px);
-      }
-      &__class {
-        font-size: 20px;
-        line-height: calc(27px/20px);
-      }
+    &__title {
+      line-height: calc(57px / 42px);
+    }
+    &__people {
+      gap: 72px;
     }
   }
-  @media (min-width: 768px) {
-    .reviews {
-      &__container {
-        padding-inline: 35px;
-      }
-      &__title {
-        font-size: 42px;
-        line-height: calc(57px/42px);
-        margin-bottom: 60px;
-      }
-      &__people {
-        gap: 72px;
-      }
+  .person {
+    //gap: 70px;
+    max-width: 680px;
+    height: 773px;
+    padding: 87px 71px 62px 71px;
+    max-width: 680px;
+    &__text {
+      font-size: 50px;
+      line-height: calc(56px / 50px);
     }
-    .person {
-      //gap: 70px;
-      max-width: 680px;
-      height: 773px;
-      padding: 87px 71px 62px 71px;
-      max-width: 680px;
-      &__text {
-        font-size: 50px;
-        line-height: calc(56px/50px);
-      }
-      &__information {
-        gap: 25px;
-      }
-      &__avatar {
-        height: 106px;
-        width: 106px;
-      }
-      &__name {
-        font-size: 32px;
-        line-height: calc(44px/32px);
-      }
-      &__class {
-        font-size: 28px;
-        line-height: calc(38px/28px);
-      }
+    &__information {
+      gap: 25px;
+    }
+    &__avatar {
+      height: 106px;
+      width: 106px;
+    }
+    &__name {
+      font-size: 32px;
+      line-height: calc(44px / 32px);
+    }
+    &__class {
+      font-size: 28px;
+      line-height: calc(38px / 28px);
     }
   }
-  @media (min-width: 1240px) {
-    .reviews {
-      &__container {
-        padding-inline: 70px;
-      }
-      &__title {
-        font-size: 42px;
-        line-height: calc(57px/42px);
-        margin-bottom: 80px;
-      }
-      &__people {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 0px;
-        align-items: center;
-      }
+}
+@media (min-width: 1240px) {
+  .reviews {
+    &__container {
+      padding-inline: 70px;
+      margin-bottom: 110px;
     }
-    .person {
-        flex-basis: calc((100% - 140px)/3);
-      padding: 41px 34px 26px 29px;
-      max-width: 320px;
-      height: 364px;
-      &__text {
-        font-size: 22px;
-        line-height: calc(25px/22px);
-        //max-width: 253px;
-      }
-      &__avatar {
-        height: 50px;
-        width: 50px;
-      }
-      &__name {
-        font-size: 20px;
-        line-height: calc(27px/20px);
-      }
-      &__class {
-        font-size: 16px;
-        line-height: calc(22px/16px);
-      }
+    &__title {
+      line-height: calc(57px / 42px);
+    }
+    &__people {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0px;
+      align-items: center;
     }
   }
-  @media (min-width: 1920px) {
-    .reviews {
-      &__container {
-        padding-inline: 0px;
-      }
-      &__title {
-        //@extend %titlesDesktop;
-        line-height: calc(65px/48px);
-        margin-bottom: 55px;
-      }
-      &__people {
-        gap: 91px;
-      }
+  .person {
+    flex-basis: calc((100% - 140px) / 3);
+    padding: 41px 34px 26px 29px;
+    height: 364px;
+    &__text {
+      font-size: 22px;
+      line-height: calc(25px / 22px);
     }
-    .person {
-      padding: 59px 42px 42px 42px;
-      max-width: 462px;
-      height: 526px;
-      flex-basis: calc((100% - 210px)/3);
-      &__text {
-        font-size: 32px;
-        line-height: calc(36px/32px);
-        height: 252px;
-      }
-      &__avatar {
-        height: 72px;
-        width: 72px;
-      }
-      &__name {
-        font-size: 24px;
-        line-height: calc(33px/24px);
-      }
-      &__class {
-        font-size: 20px;
-        line-height: calc(20px/27px);
-      }
+    &__avatar {
+      height: 50px;
+      width: 50px;
+    }
+    &__name {
+      font-size: 20px;
+      line-height: calc(27px / 20px);
+    }
+    &__class {
+      font-size: 16px;
+      line-height: calc(22px / 16px);
     }
   }
-  
+}
+@media (min-width: 1920px) {
+  .reviews {
+    &__container {
+      padding-inline: 0px;
+      margin-bottom: 130px;
+    }
+    &__title {
+      line-height: calc(65px / 48px);
+    }
+    &__people {
+      gap: 91px;
+    }
+  }
+  .person {
+    padding: 59px 42px 42px 42px;
+    max-width: 462px;
+    height: 526px;
+    flex-basis: calc((100% - 210px) / 3);
+    &__text {
+      font-size: 32px;
+      line-height: calc(36px / 32px);
+      height: 252px;
+    }
+    &__avatar {
+      height: 72px;
+      width: 72px;
+    }
+    &__name {
+      font-size: 24px;
+      line-height: calc(33px / 24px);
+    }
+    &__class {
+      font-size: 20px;
+      line-height: calc(20px / 27px);
+    }
+  }
+}

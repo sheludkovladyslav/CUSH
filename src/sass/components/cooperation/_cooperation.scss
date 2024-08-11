@@ -23,6 +23,7 @@
   &__title {
     line-height: calc(33px / 24px);
     max-width: 275px;
+    margin-bottom: 0;
   }
   &__btn {
     @extend %buttonAnimation;
@@ -33,12 +34,16 @@
     background: $colorTextActive;
     margin-top: 11px;
   }
+  &__list {
+    list-style: none;
+  }
 }
 @media (min-width: 576px) {
   .cooperation {
     background-size: 505px, 300px, 300px;
     &__container {
       padding-inline: 35px;
+      margin-bottom: 70px;
       gap: 35px;
     }
     &__text {
@@ -46,9 +51,9 @@
       line-height: calc(25px / 18px);
     }
     &__title {
-  
       max-width: 390px;
       line-height: calc(49px / 36px);
+      margin-bottom: 0;
     }
     &__btn {
       padding: 11px 20px;
@@ -63,6 +68,7 @@
     &__container {
       padding-inline: 44px;
       align-items: flex-start;
+      margin-bottom: 80px;
       gap: 25px;
     }
     &__text {
@@ -74,9 +80,16 @@
     &__title {
       font-size: 32px;
       line-height: calc(44px / 32px);
+      text-align: left;
+      margin-bottom: 0;
     }
     &__btn {
       font-size: 14px;
+    }
+
+    &__list {
+      padding-left: 15px;
+      list-style-type: decimal;
     }
   }
 }
@@ -86,12 +99,14 @@
     background-position-y: top, top, center;
     &__container {
       padding-inline: 70px;
+      margin-bottom: 110px;
       gap: 35px;
     }
     &__title {
-
       line-height: calc(57px / 42px);
       max-width: 473px;
+      margin-bottom: 0;
+
       text-align: left;
     }
     &__text {
@@ -103,19 +118,23 @@
       font-size: 16px;
       padding: 15px 17px;
     }
+    &__list {
+      padding-left: 20px;
+    }
   }
 }
 @media (min-width: 1920px) {
   .cooperation {
     background-size: 650px, 400px, 400px;
     &__container {
-      padding-inline: 120px;
+      margin-bottom: 130px;
       gap: 50px;
+      padding: 0;
     }
     &__title {
-      // @extend %titlesDesktop;
       line-height: calc(65px / 48px);
-      max-width: 550px;
+      max-width: 530px;
+      margin-bottom: 0;
     }
     &__text {
       font-size: 24px;
@@ -125,6 +144,9 @@
     &__btn {
       font-size: 18px;
       padding: 20px 25px;
+    }
+    &__list {
+      padding-left: 25px;
     }
   }
 }

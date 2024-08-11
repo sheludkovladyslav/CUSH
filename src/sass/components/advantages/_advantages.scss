@@ -10,12 +10,11 @@
   &__title {
     margin-bottom: 20px;
     max-width: 468px;
-    line-height: calc(33px/24px);
+    line-height: calc(33px / 24px);
   }
   &--another-color {
     color: $colorTextActive;
   }
-
 }
 .advantage {
   display: flex;
@@ -24,7 +23,7 @@
   &__information {
     display: flex;
     align-items: center;
-  
+
     gap: 35px;
     &::before {
       content: '';
@@ -39,7 +38,7 @@
   &__text {
     font-weight: 600;
     font-size: 16px;
-    line-height: calc(19px/16px);
+    line-height: calc(19px / 16px);
     max-width: 386px;
   }
   &__information--padding {
@@ -63,14 +62,14 @@
   .advantages {
     &__container {
       padding-inline: 25px;
-      margin-bottom: 60px;
+      margin-bottom: 70px;
       gap: 60px;
     }
     &__title {
       font-size: 32px;
       margin-bottom: 30px;
       max-width: 473px;
-      line-height: calc(44px/32px);
+      line-height: calc(44px / 32px);
     }
   }
   .advantage {
@@ -81,7 +80,7 @@
     &__text {
       font-size: 18px;
       max-width: 400px;
-      line-height: calc(22px/16px);
+      line-height: calc(22px / 16px);
     }
     &__information--padding {
       padding-top: 20px;
@@ -92,12 +91,13 @@
   .advantages {
     &__container {
       padding-inline: 35px;
+      margin-bottom: 80px;
     }
     &__title {
       font-size: 32px;
       margin-bottom: 35px;
       max-width: 600px;
-      line-height: calc(44px/32px);
+      line-height: calc(44px / 32px);
     }
   }
   .advantage {
@@ -112,7 +112,7 @@
     &__text {
       font-size: 20px;
       max-width: 600px;
-      line-height: calc(27px/20px);
+      line-height: calc(27px / 20px);
     }
     &__information--padding {
       padding-top: 25px;
@@ -126,15 +126,15 @@
       justify-content: space-between;
       gap: 0;
       padding-inline: 75px;
-      margin-bottom: 60px;
+      margin-bottom: 110px;
     }
     &__photo {
-      max-width: 444px;
+      max-width: 540px;
     }
     &__title {
       font-weight: 800;
       font-size: 36px;
-      line-height: calc(49px/36px);
+      line-height: calc(49px / 36px);
       margin-bottom: 35px;
       text-align: left;
       max-width: 538px;
@@ -148,7 +148,7 @@
     &__text {
       font-size: 24px;
       max-width: 482px;
-      line-height: calc(33px/24px);
+      line-height: calc(33px / 24px);
     }
     &__information--padding {
       padding-top: 35px;
@@ -159,7 +159,8 @@
   .advantages {
     &__container {
       padding: 0px;
-      margin-bottom: 60px;
+      margin-bottom: 130px;
+      align-items: flex-start;
     }
     &__photo {
       max-width: 770px;
@@ -168,7 +169,6 @@
       font-size: 48px;
       max-width: 690px;
       margin-bottom: 70px;
-      line-height: calc(33px/44px);
     }
   }
   .advantage {
@@ -183,7 +183,7 @@
     &__text {
       font-size: 24px;
       max-width: 600px;
-      line-height: calc(33px/24px);
+      line-height: calc(33px / 24px);
     }
     &__information--padding {
       padding-top: 35px;

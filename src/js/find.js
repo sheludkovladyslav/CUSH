@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
   let selectedSectionId = null;
 
   if (inputBox && resultBox && searchButton) {
-    // Обробник подій для поля вводу
     inputBox.addEventListener('keyup', () => {
       let result = [];
       let input = inputBox.value;
@@ -33,19 +32,17 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Обробник подій для кнопки "Знайти"
     searchButton.addEventListener('click', () => {
       if (selectedSectionId) {
         const section = document.getElementById(selectedSectionId);
         if (section) {
           section.scrollIntoView({ behavior: 'smooth' });
-          resultBox.innerHTML = ''; // Очистити результати пошуку
-          inputBox.value = ''; // Очистити поле вводу
+          resultBox.innerHTML = '';
+          inputBox.value = '';
         }
       }
     });
 
-    // Функція для відображення результатів пошуку
     function display(result) {
       const content = result.map(item => {
         return `<li data-id="${item.id}" class="${
@@ -56,12 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
       resultBox.innerHTML = '<ul>' + content.join(' ') + '</ul>';
     }
 
-    // Обробник кліків на результати пошуку
     resultBox.addEventListener('click', event => {
       const listItem = event.target.closest('li');
       if (listItem) {
         selectedSectionId = listItem.getAttribute('data-id');
-        inputBox.value = listItem.textContent; // Записати значення в поле вводу
+        inputBox.value = listItem.textContent;
       }
     });
   } else {
@@ -77,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (searchButton && searchBox) {
     searchButton.addEventListener('click', () => {
-      searchBox.classList.toggle('menu-visible'); // Перемикати клас для показу/приховування
+      searchBox.classList.toggle('menu-visible');
     });
   } else {
     console.error(

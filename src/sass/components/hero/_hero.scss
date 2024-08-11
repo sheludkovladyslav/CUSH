@@ -6,6 +6,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    margin-bottom: 20px;
 
     display: flex;
     flex-direction: column;
@@ -117,6 +118,7 @@
     &__container {
       justify-content: flex-start;
       padding-top: 90px;
+      margin-bottom: 30px;
     }
 
     &__button {
@@ -144,6 +146,7 @@
     &__container {
       min-height: 463px;
       padding-top: 80px;
+      margin-bottom: 40px;
     }
     &__title {
       font-size: 42px;
@@ -190,6 +193,7 @@
       padding-top: 0;
       min-height: 800px;
       display: flex;
+      margin-bottom: 40px;
       justify-content: center;
     }
 
@@ -264,6 +268,7 @@
     &__container {
       min-height: 1008px;
       max-width: 1680px;
+      margin-bottom: 50px;
     }
 
     &__invitation {

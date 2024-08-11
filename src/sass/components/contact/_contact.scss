@@ -87,6 +87,7 @@
   .contact {
     &__container {
       padding-inline: 35px;
+      margin-bottom: 70px;
     }
     &__title {
       margin-bottom: 18px;
@@ -138,6 +139,7 @@
   .contact {
     &__container {
       padding-inline: 44px;
+      margin-bottom: 80px;
     }
     &__subtitle {
       margin-bottom: 50px;
@@ -185,20 +187,23 @@
   .contact {
     &__container {
       padding-inline: 70px;
+      margin-bottom: 110px;
     }
     &__subtitle {
       margin-bottom: 106px;
       font-size: 32px;
     }
     &__map {
-      width: 493px;
+      width: 50%;
     }
     &__wrapper {
       flex-direction: row;
       gap: 85px;
+      width: 100%;
+      justify-content: center;
     }
     &__contacs {
-      max-width: 493px;
+      width: 50%;
     }
   }
   .contacs {
@@ -232,7 +237,8 @@
 @media (min-width: 1920px) {
   .contact {
     &__container {
-      padding-inline: 120px;
+      margin-bottom: 130px;
+      padding: 0;
     }
     &__title {
       margin-bottom: 10px;
@@ -241,14 +247,17 @@
       margin-bottom: 54px;
       font-size: 36px;
     }
+    &__wrapper {
+      width: 100%;
+    }
     &__map {
-      width: 682px;
+      width: 50%;
     }
     &__wrapper {
-      gap: 128px;
+      gap: 100px;
     }
     &__contacs {
-      max-width: 682px;
+      width: 50%;
     }
   }
   .contacs {
