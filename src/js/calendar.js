@@ -406,7 +406,10 @@ const calendar = document.querySelector('.calendar');
 const closeBtn = document.querySelector('.form__close--calendar');
 
 const handleScroll = () => {
-  const currentScrollPosition = window.scrollY;
+  const currentScrollPosition =
+    window.scrollY ||
+    document.documentElement.scrollTop ||
+    document.body.scrollTop;
 
   if (
     currentScrollPosition > scrollLimit &&
@@ -418,11 +421,13 @@ const handleScroll = () => {
   }
 };
 
+// Show the calendar and add the scroll event listener
 const showCalendar = () => {
   calendar.style.display = 'block';
-  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('scroll', handleScroll, { passive: true });
 };
 
+// Close the calendar and remove the scroll event listener
 const closeCalendar = () => {
   calendar.style.display = 'none';
   window.removeEventListener('scroll', handleScroll);
