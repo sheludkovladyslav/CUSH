@@ -1,0 +1,2 @@
+(()=>{const e=document.querySelector("[data-open_btn]"),n=document.querySelector("[data-menu]");e.addEventListener("click",(function(){n.classList.toggle("menu-open"),document.body.classList.toggle("no-scroll")})),n.addEventListener("click",(function(e){e.target.classList.contains("links__link")&&(n.classList.remove("menu-open"),document.body.classList.remove("no-scroll"))}))})();
+//# sourceMappingURL=index.2f3eddc5.js.map
