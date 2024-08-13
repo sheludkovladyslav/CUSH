@@ -22,7 +22,6 @@
 
   &__title {
     font-weight: 700;
-    font-size: 24px;
     line-height: 167%;
     text-align: center;
     color: $colorTextTertiary;
@@ -108,10 +107,9 @@
   }
 }
 
-@media (min-width: 567px) {
+@media (min-width: 575px) {
   .hero {
     &__title {
-      font-size: 32px;
       max-width: 380px;
     }
 
