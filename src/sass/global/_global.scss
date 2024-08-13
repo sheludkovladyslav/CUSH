@@ -4,6 +4,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   font-family: $fontTextPrimary;
   font-weight: 400;
   font-size: 14px;
