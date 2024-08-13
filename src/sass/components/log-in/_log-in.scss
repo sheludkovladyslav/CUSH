@@ -206,6 +206,10 @@
       left: 50%;
       transform: translate(-50%, -50%) scale(1);
     }
+    &__form {
+      max-width: 100%;
+      max-width: 540px;
+    }
   }
   .backdrop {
     background-color: rgba(0, 0, 0, 0.444);
