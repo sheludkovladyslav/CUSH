@@ -163,12 +163,8 @@
   fill: $colorTextTertiary;
 }
 
-@media (min-width: 567px) {
+@media (min-width: 575px) {
   .calendar {
-    &__container {
-      padding-inline: 25px;
-    }
-
     &__management {
       margin-bottom: 15px;
     }
@@ -199,10 +195,6 @@
 }
 @media (min-width: 768px) {
   .calendar {
-    &__container {
-      padding-inline: 35px;
-    }
-
     &__management {
       margin-bottom: 20px;
     }
@@ -300,10 +292,6 @@
 }
 @media (min-width: 1920px) {
   .calendar {
-    &__container {
-      padding: 0;
-    }
-
     &__management {
       margin-bottom: 50px;
     }

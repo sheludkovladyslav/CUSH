@@ -1,6 +1,5 @@
 .teachers {
   &__container {
-    padding-inline: 15px;
     margin-bottom: 60px;
   }
 
@@ -53,10 +52,9 @@
   }
 }
 
-@media (min-width: 567px) {
+@media (min-width: 575px) {
   .teachers {
     &__container {
-      padding-inline: 25px;
       margin-bottom: 70px;
     }
   }
@@ -74,7 +72,6 @@
 @media (min-width: 768px) {
   .teachers {
     &__container {
-      padding-inline: 30px;
       margin-bottom: 80px;
     }
 
@@ -134,7 +131,6 @@
 @media (min-width: 1240px) {
   .teachers {
     &__container {
-      padding-inline: 70px;
       margin-bottom: 110px;
     }
 
@@ -167,7 +163,6 @@
 @media (min-width: 1920px) {
   .teachers {
     &__container {
-      padding: 0;
       margin-bottom: 130px;
     }
 

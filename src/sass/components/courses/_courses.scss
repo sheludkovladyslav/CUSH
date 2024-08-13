@@ -1,6 +1,5 @@
 .courses {
   &__container {
-    padding-inline: 15px;
     margin-bottom: 60px;
     display: flex;
     flex-direction: column;
@@ -78,10 +77,9 @@
   margin-bottom: 20px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 575px) {
   .courses {
     &__container {
-      padding-inline: 25px;
       margin-bottom: 70px;
     }
     &__title {
@@ -122,7 +120,6 @@
 @media (min-width: 768px) {
   .courses {
     &__container {
-      padding-inline: 35px;
       margin-bottom: 80px;
     }
     &__title {
@@ -166,7 +163,6 @@
 @media (min-width: 1240px) {
   .courses {
     &__container {
-      padding-inline: 70px;
       margin-bottom: 110px;
     }
     &__title {
@@ -201,7 +197,6 @@
 @media (min-width: 1920px) {
   .courses {
     &__container {
-      padding: 0;
       margin-bottom: 130px;
     }
     &__title {

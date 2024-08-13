@@ -141,13 +141,7 @@
   }
 }
 
-@media (min-width: 567px) {
-  .header {
-    &__container {
-      padding: 25px;
-    }
-  }
-
+@media (min-width: 575px) {
   .links__link {
     font-size: 40px;
   }
@@ -158,12 +152,6 @@
 }
 
 @media (min-width: 768px) {
-  .header {
-    &__container {
-      padding: 35px;
-    }
-  }
-
   .links__link {
     font-size: 40px;
   }
@@ -284,12 +272,6 @@
   }
   .log-in__link {
     font-size: 18px;
-  }
-
-  .header {
-    &__container {
-      padding-inline: 0;
-    }
   }
 
   .header__logo {

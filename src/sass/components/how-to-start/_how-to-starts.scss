@@ -1,6 +1,5 @@
 .start {
   &__container {
-    padding-inline: 15px;
     margin-bottom: 60px;
   }
 
@@ -66,10 +65,9 @@
   }
 }
 
-@media (min-width: 566px) {
+@media (min-width: 575px) {
   .start {
     &__container {
-      padding-inline: 25px;
       margin-bottom: 70px;
     }
 
@@ -104,7 +102,6 @@
 @media (min-width: 768px) {
   .start {
     &__container {
-      padding-inline: 35px;
       margin-bottom: 80px;
     }
 
@@ -193,7 +190,6 @@
 @media (min-width: 1240px) {
   .start {
     &__container {
-      padding-inline: 70px;
       margin-bottom: 110px;
     }
 
@@ -231,7 +227,6 @@
 @media (min-width: 1920px) {
   .start {
     &__container {
-      padding: 0;
       margin-bottom: 130px;
     }
 
