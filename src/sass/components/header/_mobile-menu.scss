@@ -12,6 +12,7 @@
     height: 30px;
     position: relative;
     background-color: transparent;
+    z-index: 3000;
   }
 
   .btn-menu__icon,
@@ -25,7 +26,6 @@
     background-color: $colorTextPrimary;
     transition: transform 0.3s ease-in 0.3s;
     transition: top 0.1s ease-in;
-    z-index: 1000;
   }
 
   .btn-menu__icon {

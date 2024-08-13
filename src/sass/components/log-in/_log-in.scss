@@ -22,8 +22,12 @@
   }
 
   &__title {
-    text-transform: uppercase;
     margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 24px;
+    align-items: flex-start;
+    text-transform: uppercase;
+    color: $colorTextTitles;
     &--experience {
       line-height: 130%;
     }
@@ -32,6 +36,7 @@
   &__form {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -49,6 +54,8 @@
   }
 
   &__inputs {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
   }
@@ -139,6 +146,9 @@
     &__title {
       font-size: 32px;
       margin-bottom: 30px;
+    }
+    &__form {
+      max-width: 410px;
     }
   }
   .register__form {

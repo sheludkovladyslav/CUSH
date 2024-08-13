@@ -6,7 +6,6 @@
     justify-content: space-between;
     padding: 15px;
     border-bottom: 0.5px solid $colorBorders;
-    z-index: 999;
   }
 
   &__logo {
@@ -73,6 +72,7 @@
   }
   &__svg {
     fill: $colorTextTertiary;
+    display: none;
   }
 }
 
@@ -242,6 +242,7 @@
 
   .log-in__svg {
     fill: $colorTextPrimary;
+    display: flex;
   }
 
   .log-in__container {
