@@ -183,6 +183,7 @@
     &__container {
       justify-content: space-between;
       margin-bottom: 130px;
+      padding-inline: 0;
     }
     &__card {
       flex-basis: calc((100% - 90px) / 3);
