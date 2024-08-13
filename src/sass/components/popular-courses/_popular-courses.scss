@@ -138,6 +138,7 @@
       padding-inline: 80px;
       margin-bottom: 110px;
       gap: 0;
+      align-items: flex-start;
     }
     &__card {
       flex-basis: calc((100% - 90px) / 3);
