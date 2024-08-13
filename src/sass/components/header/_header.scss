@@ -6,10 +6,11 @@
     justify-content: space-between;
     padding: 15px;
     border-bottom: 0.5px solid $colorBorders;
+    max-width: 1680px;
   }
 
   &__logo {
-    z-index: 10000;
+    z-index: 1000;
 
     &-text {
       display: none;
@@ -272,6 +273,7 @@
   .header {
     &__container {
       padding-inline: 70px;
+      border: none;
     }
   }
 }
