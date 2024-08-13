@@ -124,7 +124,7 @@
 .footer__contact--site::before {
   background-image: url(/src/images/footer/location.svg);
 }
-@media (min-width: 576px) {
+@media (min-width: 575px) {
   .footer {
     &__container {
       padding: 20px 35px;

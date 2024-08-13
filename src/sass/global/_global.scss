@@ -60,12 +60,18 @@ button {
     color: $colorTextTitles;
     margin-bottom: 20px;
   }
+  .container {
+    padding-inline: 15px;
+  }
 }
 
-@media (min-width: 567px) {
+@media (min-width: 575px) {
   .title {
     font-size: 32px;
     margin-bottom: 30px;
+  }
+  .container {
+    padding-inline: 25px;
   }
 }
 
@@ -74,6 +80,9 @@ button {
     font-size: 36px;
     margin-bottom: 35px;
   }
+  .container {
+    padding-inline: 35px;
+  }
 }
 
 @media (min-width: 1240px) {
@@ -81,11 +90,17 @@ button {
     font-size: 42px;
     margin-bottom: 40px;
   }
+  .container {
+    padding-inline: 75px;
+  }
 }
 
 @media (min-width: 1920px) {
   .title {
     margin-bottom: 55px;
     font-size: 48px;
+  }
+  .container {
+    padding-inline: 0px;
   }
 }
